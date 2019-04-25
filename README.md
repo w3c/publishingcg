@@ -5,4 +5,4 @@ This is the repository for ongoing work done by the [W3C Publishing Community Gr
 
 ---
 
-Chairs of the group are [Jeff Xu, Rakuten, Inc.](mailto:zheng.xu@rakuten.com) and [Matus Teixeira, W.W. Norton & Company](mailto:mteixeira@wwnorton.com)
+Chairs of the group are [Jeff Xu, Rakuten, Inc.](mailto:zheng.xu@rakuten.com) and [Matus Teixeira, W.W. Norton & Company](mailto:mteixeira@wwnorton.com).
