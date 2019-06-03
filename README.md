@@ -8,9 +8,9 @@ This is the repository for ongoing work done by the [W3C Publishing Community Gr
 
 T.B.D
 
-## COntributing to the Publishing Community Group Repositories
+## Contributing to the Publishing Community Group Repositories
 
-Use the standard fork, branch, and pull request workflow to propose changes to the specification. Please make branch names informative窶巴y including the issue or bug number for example.
+Use the standard fork, branch, and pull request workflow to propose changes to the specification. Please make branch names informatively including the issue or bug number for example.
 
 Editorial changes that improve the readability of the spec or correct spelling or grammatical mistakes are welcome.
 
