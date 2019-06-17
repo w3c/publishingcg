@@ -1,6 +1,24 @@
+![W3C Logo](https://www.w3.org/Icons/w3c_home)
+
 # Publishing Community Group
 
 This is the repository for ongoing work done by the [W3C Publishing Community Group](https://www.w3.org/community/publishingcg/).
+
+## Specifications
+
+T.B.D
+
+## Contributing to the Publishing Community Group Repositories
+
+Use the standard fork, branch, and pull request workflow to propose changes to the specification. Please make branch names informatively including the issue or bug number for example.
+
+Editorial changes that improve the readability of the spec or correct spelling or grammatical mistakes are welcome.
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md), about licensing contributions.
+
+## Tools
+
+T.B.D
 
 
 ---
