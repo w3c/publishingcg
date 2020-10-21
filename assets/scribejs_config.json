@@ -2,7 +2,7 @@
 	"ghrepo"       : "w3c/publishingcg",
 	"ghpath"       : "_minutes",
 	"ghbranch"     : "master",
-	"group"        : "pubcg",
+	"group"        : "publishingcg",
 	"auto"         : true,
     "nicknames"    : "https://www.w3.org/publishing/assets/nicknames.json",
 	"acrepo"       : "w3c/publishingcg",
