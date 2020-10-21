@@ -1,0 +1,10 @@
+{
+	"ghrepo"       : "w3c/publishingcg",
+	"ghpath"       : "_minutes",
+	"ghbranch"     : "master",
+	"group"        : "pubcg",
+	"auto"         : true,
+    "nicknames"    : "https://www.w3.org/publishing/assets/nicknames.json",
+	"acrepo"       : "w3c/publishingcg",
+    "acurlpattern" : "https://w3c.github.io/publishingcg/Meetings/Minutes/%DATE%-epub"
+}
