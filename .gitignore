@@ -1,3 +1,10 @@
 .idea/
 assets/scribejs_config_local.json
 
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+
+*.swp

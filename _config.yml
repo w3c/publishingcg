@@ -1,0 +1,17 @@
+baseurl: /community/publishingcg
+groupid: 110591
+github: https://github.com/w3c/publishingcg/
+cgname_uc: Publishing
+cgname_lc: publishing
+mission: "The goal of the group is to propose, document, and prototype features broadly related to publications on the Web, reading modes and systems, and the user experience of digital publications."
+exclude:
+   - .sass-cache/
+   - .jekyll-cache/
+   - gemfiles/
+   - Gemfile
+   - Gemfile.lock
+   - node_modules/
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
