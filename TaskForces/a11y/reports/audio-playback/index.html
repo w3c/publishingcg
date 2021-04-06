@@ -49,22 +49,90 @@
 		<section id="overview">
 			<h2>Overview</h2>
 
-			<p></p>
+			<p>Publishing has a sometimes dizzying array of ways of referring to audio playback &#8212; audiobook,
+				talking book, read aloud book, text-to-speech playback, media overlays and full audio are some of the
+				most common terms.</p>
+
+			<p>Compounding the confusion is that these are often all referred to as audio books (two words), even though
+				there is a unique form of publication called an audiobook (one word).</p>
+
+			<p>Despite the many terms used to describe audio playback, there are only two primary models for classifying
+				publications with audio:</p>
+
+			<dl>
+				<dt>Audiobook</dt>
+				<dd>
+					<p>A publication whose primary, and typically only, way of being read is auditorily.</p>
+				</dd>
+
+				<dt>Full Audio</dt>
+				<dd>
+					<p>The content of a publication is available in auditory form, but the audio is often structured
+						together with textual or visual content.</p>
+				</dd>
+			</dl>
+
+			<p>Slightly tangential to these models is text-to-speech playback, which is used to both to narrate content
+				on the fly for users and to prerecord content for distribution.</p>
+
+			<p>The rest of this guide explains each of these playback forms in more detail and demystifies the
+				terminology used to describe them.</p>
 		</section>
 		<section id="audiobooks">
 			<h2>Audiobooks</h2>
 
-			<p></p>
+			<p>An audiobook provides prerecorded narration of a work. It is typically structured as a series of one or
+				more audio files that are listened to in sequence.</p>
+
+			<p>Readers may stream the audio directly from a audiobook publisher, like Audible, or may obtain a set of
+				audio files that they can play back on any device or application with audio playback capabilities.</p>
+
+			<p>The key feature of an audiobook is that it is designed to be listened to. If there is any text content,
+				it is typically quite minimal (e.g., a playlist to aid in playback on specific devices or a table of
+				contents).</p>
+
+			<p>A recent W3C standard, aptly named <a href="https://www.w3.org/TR/audiobooks/">Audiobooks</a>, seeks to
+				bring greater structure to the world of audiobooks by introducing a formal syntax for describing
+				audiobook metadata, listing the resources of the book, and defining a play order, among other
+				features.</p>
+
+			<p class="note">Although audiobooks have historically been referred to as talking books, the term "talking
+				book" is now more commonly associated with DAISY Digital Talking Books. These are a hybrid between
+				audiobooks and full audio publications that are designed for readers who are blind or have low
+				vision.</p>
 		</section>
 		<section id="full-audio">
-			<h2>Full Audio</h2>
+			<h2>Full Audio Publications</h2>
 
-			<p></p>
+			<p>A publication with full audio differs from an audiobook in that formats that allow full audio content
+				also allow the inclusion of, and synchronization with, the full text content (even if the full text is
+				not always available).</p>
+
+			<p>EPUB is an example of a format that allows full audio to be included. Although EPUB is a text-first
+				format, it includes a technology called Media Overlays that allows audio to be synchronized with the
+				text for automatic playback.</p>
+
+			<p>Some reading devices will omit the text, making it appear as though an EPUB is an audiobook, but, unlike
+				audiobooks, there is always a minimal amout of text that has to be provided. Publications with full audio
+				are never as simple to load and play as pure audiobooks are.</p>
 		</section>
 		<section id="tts">
-			<h2>Text-to-Speech</h2>
+			<h2>Text-to-Speech Playback</h2>
 
-			<p></p>
+			<p>Text-to-speech (TTS) synthesis is a form of audio playback typically produced on demand by a reading
+				system or assistive technology. VoiceOver on Apple devices and Talkback on Android are a couple of the
+				more commonly known examples of mainstream TTS engines, while Jaws and NVDA are examples of assistive
+				technologies that are able to translate text to speech.</p>
+
+			<p>Unlike audiobooks and publications with full audio, text-to-speech is not a format but a way of listening
+				to text content the reader has alread obtained. Readers can use a TTS application to read their EPUB
+				publications, for example.</p>
+
+			<p class="note">Prerecorded text-to-speech audio is sometimes used to create audiobooks and publications
+				with full audio playback, but it is not common.</p>
+
+			<p>When a user enables text-to-speech playback, the text content of the publication is fed to an underlying
+				TTS engine that voices each word.</p>
 		</section>
 	</body>
 </html>
