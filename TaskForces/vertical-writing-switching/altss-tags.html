@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
    <head>
       <meta charset="utf-8" />
-      <title>Alternate Style Tags 1.1</title>
+      <title>Alternate Style Tags 1.2</title>
       <script src="https://www.w3.org/Tools/respec/respec-w3c-common" class="remove"></script>
       <link href="../common/css/common.css" rel="stylesheet" type="text/css" />
       <script class="remove">
@@ -11,15 +11,18 @@
               specStatus: "CG-DRAFT",
               noRecTrack: true,
               shortName: "altss-tags",
-              prevRecURI: "https://www.idpf.org/epub/altss-tags/altss-tags-20170105.html",
-              edDraftURI: "https://w3c.github.io/publ-epub-revision/altss-tags/altss-tags.html",
+              prevRecURI: "https://www.w3.org/Submission/altss-tags/",
               editors: [
                   {
                       name: "Elika J. Etemad",
                       company: "Invited Expert"
                   }
+                  {
+                      name: "MURATA Makoto",
+                      company: "Keio University"
+                  }
               ],
-              processVersion: 2017,
+              processVersion: 2021,
               includePermalinks: true,
               permalinkEdge:     true,
               permalinkHide:     false,
@@ -219,77 +222,13 @@
             </aside>
          </section>
       </section>
-      <section class="appendix" id="app-night-version-style-set-tags">
-         <h1>Night Vision Style Set Tags</h1>
 
-         <p>The following style tags are defined by this appendix:</p>
-
-         <dl class="variablelist">
-            <dt><code>day</code></dt>
-            <dd>
-               <p>This style set provides a color scheme suited for daytime use (light background, dark text). This tag is
-                  mutually exclusive with <code>night</code>.</p>
-            </dd>
-            <dt><code>night</code></dt>
-            <dd>
-               <p>This style set provides a color scheme suited for nighttime use (dark background, light text). This tag is
-                  mutually exclusive with <code>day</code>.</p>
-            </dd>
-         </dl>
-
-         <section class="notoc informative">
-            <h2>Examples</h2>
-
-            <aside class="example" id="ex.b.1">
-
-               <p>In the following example, the author provides style sheets for both both day vision and night vision
-                  presentations of the document. Both horizontal-text and vertical-text presentations are available, but the
-                  horizontal presentation is preferred:</p>
-               <pre>
-  &lt;link rel="alternate stylesheet" href="vertical.css" class="vertical"/&gt;
-  &lt;link rel="alternate stylesheet" href="day.css"      class="day"     /&gt;
-  &lt;link rel="alternate stylesheet" href="vertical.css" class="vertical"/&gt;
-  &lt;link rel="alternate stylesheet" href="night.css"    class="night"   /&gt;
-  &lt;link rel="stylesheet" href="horizontal.css" class="horizontal"/&gt;
-  &lt;link rel="stylesheet" href="day.css"        class="day"       /&gt;
-  &lt;link rel="stylesheet" href="horizontal.css" class="horizontal"/&gt;
-  &lt;link rel="stylesheet" href="night.css"      class="night"     /&gt;</pre>
-               <p>Of the preferred style sets, the day vision variant is listed first, and so in the absence of other
-                  preferences will be loaded by default.</p>
-            </aside>
-
-            <aside class="example" id="ex.b.2">
-               <p>The same effect can be created with fewer link tags by using @import statements:</p>
-               <pre>
-  &lt;link rel="alternate stylesheet" href="vertical-day.css"   class="vertical day"  /&gt;
-  &lt;link rel="alternate stylesheet" href="vertical-night.css" class="vertical night"/&gt;
-  &lt;link rel="stylesheet" href="horizontal-day.css"   class="horizontal day"  /&gt;
-  &lt;link rel="stylesheet" href="horizontal-night.css" class="horizontal night"/&gt;</pre>
-
-               <p>where vertical-day.css is</p>
-               <pre>
-  @import "vertical.css";
-  @import "day.css";</pre>
-               <p>and vertical-night.css is</p>
-               <pre>
-  @import "vertical.css";
-  @import "night.css";</pre>
-               <p>and horizontal-day.css is</p>
-               <pre>
-  @import "horizontal.css";
-  @import "day.css";</pre>
-               <p>and vertical-night.css is</p>
-               <pre>
-  @import "horizontal.css";
-  @import "night.css";</pre>
-            </aside>
-         </section>
-      </section>
       <section class="appendix informative" id="app-acknowledgements">
          <h1>Acknowledgements</h1>
 
-         <p>This draft resulted from discussion in the <a href="https://www.w3.org/Style/CSS/Group">W3C CSS Working Group</a>
-            and the <a href="http://www.idpf.org/epub/30/spec/overview/#sec-contributors-30">IDPF EPUB Working Group</a> and
+         <p>This draft resulted from discussion in the <a href="https://www.w3.org/Style/CSS/Group">W3C CSS Working Group</a>,
+           the then IDPF EPUB Working Group, and the
+	   <a href="https://www.w3.org/groups/cg/publishingcg">W3C Publishing Community Group</a> 
             would not exist without the particular suggestion of <a href="http://annevankesteren.nl">Anne van
             Kesteren</a>.</p>
 
