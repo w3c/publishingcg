@@ -1,34 +1,33 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
-   <head>
+<html>
+  <head>
       <meta charset="utf-8" />
       <title>Alternate Style Tags 1.2</title>
-      <script src="https://www.w3.org/Tools/respec/respec-w3c-common" class="remove"></script>
-      <link href="../common/css/common.css" rel="stylesheet" type="text/css" />
-      <script class="remove">
-          var respecConfig = {
-              wg: "EPUB 3 Community Group",
-              specStatus: "CG-DRAFT",
-              noRecTrack: true,
-              shortName: "altss-tags",
-              prevRecURI: "https://www.w3.org/Submission/altss-tags/",
-              editors: [
-                  {
-                      name: "Elika J. Etemad",
-                      company: "Invited Expert"
-                  }
-                  {
-                      name: "MURATA Makoto",
-                      company: "Keio University"
-                  }
-              ],
-              processVersion: 2021,
-              includePermalinks: true,
-              permalinkEdge:     true,
-              permalinkHide:     false,
-              diffTool:          "http://www.aptest.com/standards/htmldiff/htmldiff.pl",
-          };
-      </script>
+    <script
+      src="https://www.w3.org/Tools/respec/respec-w3c"
+      class="remove"
+      defer
+    ></script>
+    <script class="remove">
+      // All config options at https://respec.org/docs/
+      var respecConfig = {
+          group: "epub3",
+          specStatus: "CG-DRAFT",
+	  noRecTrack: true,
+	  previousPublishDate: "2017-01-25",
+	  previousMaturity: "Member-SUBM",
+	  prevRecShortname: "altss-tags",
+	  prevRecURI: "https://www.w3.org/Submission/altss-tags/",
+	  shortName: "altss-tags12",
+          editors: [{ name: "Elika J. Etemad",
+		      company: "Invited Expert" },
+		    { name: "MURATA Makoto",
+                      company: "Keio University" }],
+          processVersion: 2021,
+          github: "some-org/mySpec",
+	  xref: true
+      };
+    </script>
    </head>
    <body>
       <section id="abstract">
@@ -41,18 +40,20 @@
          <p>This module defines a pattern for tagging alternate style sheets using a microformat. It can be used to define
             standardized classes that can be hooked into the browser UI. Sample use cases include horizontal-vertical layout
             switches in Japanese ebook readers; automatically selecting high-contrast styles; and other accessibility
-            concerns.</p>
+           concerns.</p>
 
-         <p>[[HTML40]] defines the linking of external style sheets using the <code>link</code> element. Although typically a
-            style sheet is linked in unconditionally, HTML 4 also defines <em>alternate style sets</em>, which are named,
+	 <p>This module was originally developoed at International Digital Publishing Forum.  Its next edition (1.1) was published as a W3C member body submission.  The document provides the latest edition (1.2).</p>
+
+         <p>[[HTML]] defines the linking of external style sheets using the <code>link</code> element. Although typically a
+            style sheet is linked in unconditionally, [[HTML]] also defines <em>alternate style sets</em>, which are named,
             mutually-exclusive sets of style sheets that the reader can use to alter the display.</p>
 
-         <p>Until now, few [[HTML-LATEST]] user agents have exposed alternate styles in a meaningful way. However, alternate styles
+         <p>Until now, few HTML user agents have exposed alternate styles in a meaningful way. However, alternate styles
             are a very simple way to allow the user to alter a document's presentation to his or her preferences and
             accessibility needs.</p>
 
          <p>This specification takes advantage of the <code>class</code> attribute of the HTML <code>link</code> element
-            (introduced in [[HTML-LATEST]], but supported in many user agents for much longer) to define <em>style tags</em>: a
+            (introduced in [[HTML]], but supported in many user agents for much longer) to define <em>style tags</em>: a
             markup pattern for tagging style sheets with standardized class names. These class names can be used by a UA to
             offer special UI access to such tagged style sets.</p>
 
@@ -90,7 +91,7 @@
          <p><em>This is an informative summary of HTML's declarative alternate style set mechanism, with a few slight changes
                to terminology.</em></p>
 
-         <p>HTML 4 defines two types of style sheets in its linking mechanism: persistent style sheets and alternate style
+         <p>[[HTML]] defines two types of style sheets in its linking mechanism: persistent style sheets and alternate style
             sheets.</p>
 
          <p>A <em>persistent style sheet</em> is one that is always enabled, regardless of which alternate style set is
@@ -112,7 +113,7 @@
             alternate style sheets.</p>
 
          <p>By default, the first preferred style set is loaded. The author can override this behavior with the
-               <code>Default-Style</code> meta or HTTP header as defined in [[HTML401]].</p>
+               <code>Default-Style</code> meta or HTTP header as defined in [[HTML]].</p>
 
       </section>
       <section id="style-tag">
@@ -222,7 +223,13 @@
             </aside>
          </section>
       </section>
-
+      <section class="appendix">
+	<h2>Major Changes from the Previous Edition</h2>
+	<p>Appendix B (Night Vision Style Set Tags) of the previous version
+	  was dropped since media queries for dark or light coloe schemes are now available [[[?mediaqueries-5]].
+	</p>
+      </section>
+      
       <section class="appendix informative" id="app-acknowledgements">
          <h1>Acknowledgements</h1>
 
@@ -234,4 +241,5 @@
 
       </section>
    </body>
+ 
 </html>
