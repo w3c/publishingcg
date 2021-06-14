@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<title>Schema.org Accessibility Properties and Vocabulary</title>
+		<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove"></script>
+		<script src="../common/js/biblio.js" class="remove"></script>
+		<script src="../common/js/dfn-crossref.js" class="remove"></script>
+		<script src="../common/js/confreq-permalinks.js" class="remove"></script>
+		<script src="../common/js/css-inline.js" class="remove"></script>
+		<script class="remove">
+			//<![CDATA[
+			var respecConfig = {
+				group: "publishingcg",
+				wgPublicList: "public-publ-cg",
+				specStatus: "CG-DRAFT",
+				shortName: "a11y-properties-vocab",
+				edDraftURI: "https://w3c.github.io/publishingcg/TaskForces/a11y/reports/a11y-properties-vocab/",
+				editors: [
+					{
+						name: "Charles LaPierre",
+						company: "Benetech",
+						companyURL: "http://benetech.org",
+						w3cid: 72055
+					},
+					{
+						name: "Matt Garrish",
+						company: "DAISY Consortium",
+						companyURL: "https://www.daisy.org",
+						w3cid: 51655
+					}
+				],
+				includePermalinks: true,
+				permalinkEdge: true,
+				permalinkHide: false,
+				diffTool: "http://www.aptest.com/standards/htmldiff/htmldiff.pl",
+				github: {
+					repoURL: "https://github.com/w3c/publishingcg",
+					branch: "main"
+				}
+			};//]]></script>
+	</head>
+	<body>
+		<section id="abstract">
+			<p>This document defines the accessibility properties registered with Schema.org accessibility.</p>
+		</section>
+		<section id="sotd"></section>
+		<section id="intro">
+			<h2>Introduction</h2>
+
+			<section id="background">
+				<h3>Background</h3>
+
+				<p>This page outlines the version 2.0 accessibility properties.</p>
+
+				<p>Note: Many of the values described on this page were derived from the <a
+						href="http://www.imsglobal.org/accessibility/afav3p0pd/AfA3p0_DESinfoModel_v1p0pd.html#_Toc323719835 IMS"
+						>Global Access for All (AfA) Information Model Data Element Specification</a>, and there is more
+					information there on some terms.</p>
+
+				<p>Version 2.0 adds <code>accessMode</code>, <code>accessModeSufficient</code>, and
+						<code>accessibilitySummary</code> to the original 1.0 properties
+						(<code>accessibilityFeature</code>, <code>accessibilityHazard</code>,
+						<code>accessibilityControl</code>, and <code>accessibilityAPI</code>). These properties were
+					incorporated into <a href="http://schema.org/version/3.2/">Schema.org version 3.2</a> on March 23,
+					2017.</p>
+			</section>
+
+			<section id="naming">
+				<h3>Vocabulary Naming Convention</h3>
+
+				<p>The values defined in this vocabulary follow a camelcasing convention: single words are lowercase,
+					while compound words are concatenated into a single value with a capital letter indicating the start
+					of each connected word (e.g., "alternativeText"). This convention is not applied to acronyms,
+					accessibility APIs and other values that already have recognized naming conventions (e.g., "MathML"
+					and "iOSAccessibility").</p>
+
+				<p>To ensure maximum interoperability with user agents that process these properties, use the values
+					exactly as they are defined in this vocabulary. Alternative case spellings may not be recognized
+					(e.g., "mathml" or "aria").</p>
+
+				<p>User agent developers need to be aware that these values may not be strictly validated depending on
+					the context in which they are created and used. Two values that differ only in case should be
+					treated as identical.</p>
+			</section>
+		</section>
+		<section id="accessibilityAPI">
+			<h2>The <code>accessibilityAPI</code> Property</h2>
+
+			<section id="accessibilityAPI-definition">
+				<h3>Definition</h3>
+
+				<p>Indicates that the resource is compatible with the referenced accessibility API.</p>
+			</section>
+
+			<section id="accessibilityAPI-vocabulary">
+				<h3>Vocabulary</h3>
+
+				<section id="AndroidAccessibility">
+					<h4>AndroidAccessibility</h4>
+				</section>
+
+				<section id="ARIA">
+					<h4>ARIA</h4>
+				</section>
+
+				<section id="ATK">
+					<h4>ATK</h4>
+				</section>
+
+				<section id="AT-SPI">
+					<h4>AT-SPI</h4>
+				</section>
+
+				<section id="BlackberryAccessibility">
+					<h4>BlackberryAccessibility</h4>
+				</section>
+
+				<section id="iAccessible2">
+					<h4>iAccessible2</h4>
+				</section>
+
+				<section id="iOSAccessibility">
+					<h4>iOSAccessibility</h4>
+				</section>
+
+				<section id="JavaAccessibility">
+					<h4>JavaAccessibility</h4>
+				</section>
+
+				<section id="MacOSXAccessibility">
+					<h4>MacOSXAccessibility</h4>
+				</section>
+
+				<section id="MSAA">
+					<h4>MSAA</h4>
+				</section>
+
+				<section id="UIAutomation">
+					<h4>UIAutomation</h4>
+				</section>
+			</section>
+		</section>
+		<section id="accessibilityControl">
+			<h2>The <code>accessibilityControl</code> Property</h2>
+
+			<section id="accessibilityControl-definition">
+				<h3>Definition</h3>
+
+				<p>Identifies one or more input methods that allow access to all of the application functionality.</p>
+			</section>
+
+			<section id="accessibilityControl-vocabulary">
+				<h3>Vocabulary</h3>
+
+				<section id="fullKeyboardControl">
+					<h4>fullKeyboardControl</h4>
+				</section>
+
+				<section id="fullMouseControl">
+					<h4>fullMouseControl</h4>
+				</section>
+
+				<section id="fullSwitchControl">
+					<h4>fullSwitchControl</h4>
+				</section>
+
+				<section id="fullTouchControl">
+					<h4>fullTouchControl</h4>
+				</section>
+
+				<section id="fullVideoControl">
+					<h4>fullVideoControl</h4>
+				</section>
+
+				<section id="fullVoiceControl">
+					<h4>fullVoiceControl</h4>
+				</section>
+			</section>
+		</section>
+		<section id="accessibilityFeature">
+			<h2>The <code>accessibilityFeature</code> Property</h2>
+
+			<section id="accessibilityFeature-definition">
+				<h3>Definition</h3>
+
+				<p>The <a href="http://schema.org/accessibilityFeature">accessibilityFeature property</a> supports many
+					different values, and when alphabetized many of them will appear to have only tenuous relation. This
+					section breaks the values out into their constituent groups to explain their inclusion.</p>
+
+				<p>There are four groups of features to be aware of:</p>
+
+				<ul>
+					<li>Transform features identify characteristics of the content that can be manipulated by the user
+						to make the content better fit their personal needs. The ability to change the font size of the
+						text is one example of a transformation property.</li>
+
+					<li>Structure and navigation features identify navigation aids that are provided to simplify moving
+						around within the media, such as the inclusion of a table of contents or an index.</li>
+
+					<li>Control features identify content and features that are fully controllable by the user. The
+						ability to pause a timed interface is an example.</li>
+
+					<li>Augmentation features identify content features that provide alternate access to a resource. The
+						inclusion of alternative text in an alt attribute is one of the most commonly identifiable
+						augmentation features.</li>
+				</ul>
+
+				<p>Each of the following section examines one of these classes values in more detail, listing the values
+					and describing their expected use.</p>
+
+				<p>The property also includes the value "<code>none</code>" that can be set to indicate that the page
+					has been checked but contains no special enhancements. The value can also be used to indicate that
+					no statement about the accessibile nature of the content can be made. Setting this value helps
+					differentiate pages that have been evaluated for accessibility from those that have not (i.e., to
+					remove ambiguity about why the accessibilityFeature property might not have been set).</p>
+			</section>
+
+			<section id="accessibilityFeature-vocabulary">
+				<h3>Vocabulary</h3>
+
+				<section id="transformation-terms">
+					<h4>Transformation Terms</h4>
+
+					<p>Transformation features either state how content is available in a transformed state or is set up
+						so that a user can transform it. These properties derive from <a
+							href="http://www.w3.org/TR/WCAG20/#visual-audio-contrast">WCAG 2.0 section 1.4</a>.</p>
+
+					<section id="highContrastAudio">
+						<h5>highContrastAudio</h5>
+
+						<p>Audio content with speech in the foreground meets the contrast thresholds set out in <a
+								rel="nofollow"
+								href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-noaudio.html">WCAG
+								Success Criteria 1.4.7</a>. The success criterion the audio meets can be appeneded, but
+							is not required:</p>
+
+						<ul>
+							<li>/noBackground - no background noise is present</li>
+							<li>/reducedBackground - at least 20db difference between foreground speech and background
+								noise</li>
+							<li>/switchableBackground - background noise can be turned off (sufficient contrast may not
+								be met without doing so)</li>
+						</ul>
+					</section>
+
+					<section id="highContrastDisplay">
+						<h5>highContrastDisplay</h5>
+
+						<p>Content meets the visual contrast threshold set out in <a
+								href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html">WCAG
+								Success Criteria 1.4.6</a>.</p>
+					</section>
+
+					<section id="largePrint">
+						<h5>largePrint</h5>
+
+						<p>The content has been formatted to meet large print guidelines. The specific point size may
+							optionally be added as an extension (e.g., largePrint/18).</p>
+
+						<p>The property is not set if the font size can be increased. See displayTransformability.</p>
+					</section>
+
+					<section id="displayTransformability">
+						<h5>displayTransformability</h5>
+
+						<p>Display properties are controllable by the user. This property can be set, for example, if
+							custom CSS style sheets can be applied to the content to control the appearance. It can also
+							be used to indicate that styling in document formats like Word and PDF can be modified.</p>
+
+						<p>This property can be modified to identify the specific display properties that allow
+							meaningful control. Modifiers should take the form of CSS property names, even if CSS is not
+							the document styling format:</p>
+
+						<ul>
+							<li>/font-size</li>
+							<li>/font-family</li>
+							<li>/line-height</li>
+							<li>/word-spacing</li>
+							<li>/color</li>
+							<li>/background-color</li>
+						</ul>
+
+						<p>Note that many CSS display properties can be modified, but not all usefully enhance the
+							accessibility (e.g., image-based content). </p>
+					</section>
+				</section>
+
+				<section id="structure-and-navigation-terms">
+					<h4>Structure and Navigation Terms</h4>
+
+					<p>The following values identify key navigation aids available with the work.</p>
+
+					<section id="annotations">
+						<h5>annotations</h5>
+
+						<p>The work includes annotations from the author, instructor and/or others.</p>
+					</section>
+
+					<section id="bookmarks">
+						<h5>bookmarks</h5>
+
+						<p>The work includes bookmarks to facilitate navigation to key points.</p>
+					</section>
+
+					<section id="index-term">
+						<h5>index</h5>
+
+						<p>The work includes an index to the content.</p>
+					</section>
+
+					<section id="printPageNumbers">
+						<h5>printPageNumbers</h5>
+
+						<p>The work includes equivalent print page numbers. This setting is most commonly used with
+							ebooks for which there is a print equivalent.</p>
+					</section>
+
+					<section id="readingOrder">
+						<h5>readingOrder</h5>
+
+						<p>The reading order of the content is clearly defined in the markup (e.g., figures, sidebars
+							and other secondary content has been marked up to allow it to be skipped automatically
+							and/or manually escaped from.</p>
+					</section>
+
+					<section id="structuralNavigation">
+						<h5>structuralNavigation</h5>
+
+						<p>The use of headings in the work fully and accurately reflects the document hierarchy,
+							allowing navigation by assistive technologies.</p>
+					</section>
+
+					<section id="taggedPDF">
+						<h5>taggedPDF</h5>
+
+						<p>The structures in a PDF have been tagged to improve the navigation of the content.</p>
+					</section>
+				</section>
+
+				<section id="content-control-terms">
+					<h4>Content Control Terms</h4>
+
+					<p>The following values identify aspects of the content that users can control to improve access to
+						the content. Do not confuse these control features with the accessibilityControl property, which
+						defines input methods used to control the content.</p>
+
+					<section id="synchronizedAudioText">
+						<h5>synchronizedAudioText</h5>
+
+						<p>Describes a resource that offers both audio and text, with information that allows them to be
+							rendered simultaneously. The granularity of the synchronization is not specified. This term
+							is not recommended when the only material that is synchronized is the document headings.</p>
+					</section>
+
+					<section id="timingControl">
+						<h5>timingControl</h5>
+
+						<p>For content with timed interaction, this value indicates that the user has the ability to
+							control the timing to meet their needs (e.g., pause and reset)</p>
+					</section>
+
+					<section id="unlocked">
+						<h5>unlocked</h5>
+
+						<p>No digital rights management or other content restriction protocols have been applied to the
+							resource.</p>
+					</section>
+				</section>
+
+				<section id="augmentation-terms">
+					<h4>Augmentation Terms</h4>
+
+					<p>Augmentation is the provision of intellectual content in a different access mode from its
+						source.</p>
+
+					<section id="alternativeText">
+						<h5>alternativeText</h5>
+
+						<p>Alternative text is provided for visual content (e.g., via the HTML alt attribute).</p>
+					</section>
+
+					<section id="audioDescription">
+						<h5>audioDescription</h5>
+
+						<p>Audio descriptions are available (e.g., via an HTML5 track element with
+							kind="descriptions").</p>
+					</section>
+
+					<section id="braille">
+						<h5>braille</h5>
+
+						<p>The content is in braille format, or alternatives are available in braille. This value can be
+							extended to identify the different types of braille (/ASCII, /unicode, /music, /math,
+							/chemistry or /nemeth), and whether the braille is contracted or not (/grade1 and /grade2).
+							Other extensions such as the code the braille conforms to can also be specified.</p>
+					</section>
+
+					<section id="captions">
+						<h5>captions</h5>
+
+						<p>Indicates that synchronized captions are available for audio and video content.</p>
+					</section>
+
+					<section id="ChemML">
+						<h5>ChemML</h5>
+
+						<p>Identifies that chemical information is encoded using the ChemML markup language.</p>
+					</section>
+
+					<section id="describedMath">
+						<h5>describedMath</h5>
+
+						<p>Textual descriptions of math equations are included, whether in the alt attribute for
+							image-based equations, using the alttext attribute for MathML equations, or by other
+							means.</p>
+					</section>
+
+					<section id="latex">
+						<h5>latex</h5>
+
+						<p>Identifies that mathematical equations and formulas are encoded in latex.</p>
+					</section>
+
+					<section id="longDescription">
+						<h5>longDescription</h5>
+
+						<p>Descriptions are provided for image-based visual content and/or complex structures such as
+							tables, mathematics, diagrams and charts.</p>
+					</section>
+
+					<section id="mathml">
+						<h5>MathML</h5>
+
+						<p>Identifies that mathematical equations and formulas are encoded in MathML.</p>
+					</section>
+
+					<section id="rubyAnnotations">
+						<h5>rubyAnnotations</h5>
+
+						<p>Indicates that ruby annotations are provided in the content. Ruby annotations are used as
+							pronunciation guides for the logographic characters for languages like Chinese or Japanese.
+							It makes difficult Kanji or CJK ideographic characters more accessible. The absence of
+							ruby/annotations/* implies that no CJK ideographic characters have ruby.</p>
+					</section>
+
+					<section id="signLanguage">
+						<h5>signLanguage</h5>
+
+						<p>Synchronized sign language intepretation is available for audio and video content. The value
+							may be extended by adding an ISO 639 sign language code. For example, /sgn-en-us for
+							American Sign Language.</p>
+					</section>
+
+					<section id="tactileGraphic">
+						<h5>tactileGraphic</h5>
+
+						<p>Tactile graphics are provided. For example, as described in the BANA Guidelines and Standards
+							for Tactile Graphics.</p>
+					</section>
+
+					<section id="tactileObject">
+						<h5>tactileObject</h5>
+
+						<p>The content is a tactile 3D object, or the model to generate one is included.</p>
+					</section>
+
+					<section id="transcript">
+						<h5>transcript</h5>
+
+						<p>Indicates that a transcript of the audio content is available.</p>
+					</section>
+
+					<section id="ttsMarkup">
+						<h5>ttsMarkup</h5>
+
+						<p>One or more of SSML, PLS lexicons and CSS3 Speech properties has been used to enhance
+							text-to-speech playback quality.</p>
+					</section>
+				</section>
+			</section>
+		</section>
+		<section id="accessibilityHazard">
+			<h2>The <code>accessibilityHazard</code> Property</h2>
+
+			<section id="accessibilityHazard-definition">
+				<h3>Definition</h3>
+
+				<p>A characteristic of the described resource that is physiologically dangerous to some users. Related
+					to <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure.html">WCAG 2.0 guideline 2.3</a>.</p>
+
+				<p>If none of the hazards are known to exist instead of calling out each nonHazard it is recommended to
+					use "none". If the content has hazard(s), include positive assertions for the hazards it has and
+					negative assertions for the others.</p>
+
+				<p>If the property is not set in the positive or negative or is specifically set to unknown, the state
+					of hazards is not known.</p>
+			</section>
+
+			<section id="accessibilityHazard-vocabulary">
+				<h3>Vocabulary</h3>
+
+				<section id="flashing">
+					<h4>flashing</h4>
+				</section>
+
+				<section id="noFlashingHazard">
+					<h4>noFlashingHazard</h4>
+				</section>
+
+				<section id="motionSimulation">
+					<h4>motionSimulation</h4>
+				</section>
+
+				<section id="noMotionSimulationHazard">
+					<h4>noMotionSimulationHazard</h4>
+				</section>
+
+				<section id="sound">
+					<h4>sound</h4>
+				</section>
+
+				<section id="noSoundHazard">
+					<h4>noSoundHazard</h4>
+				</section>
+
+				<section id="unknown">
+					<h4>unknown</h4>
+				</section>
+
+				<section id="none">
+					<h4>none</h4>
+				</section>
+			</section>
+		</section>
+		<section id="accessibilitySummary">
+			<h2>The <code>accessibilitySummary</code> Property</h2>
+
+			<p>A human-readable summary of specific accessibility features or deficiencies, consistent with the other
+				accessibility metadata but expressing subtleties such as "short descriptions are present but long
+				descriptions will be needed for non-visual users" or "short descriptions are present and no long
+				descriptions are needed."</p>
+		</section>
+		<section id="accessMode">
+			<h2>The <code>accessMode</code> Property</h2>
+
+			<section id="accessMode-definition">
+				<h3>Definition</h3>
+
+				<p>The human sensory perceptual system or cognitive faculty through which a person may process or
+					perceive information.</p>
+				<p>Refer to <a href="http://schema.org/accessMode">schema.org's property definition of
+					accessMode</a></p>
+
+				<p>The <a href="http://www.imsglobal.org/accessibility/afav3p0pd//AfA3p0_DRDinfoModel_v1p0pd.html#toc-7"
+						>Access for All Digital Resource Description Specification Information Model</a> from IMS Global
+					defines an accessMode property that describes "an access mode through which the intellectual content
+					of a described resource or adaptation is communicated". The allowed values for the property include
+					textual, visual, auditory, tactile. The accessMode property of a single digital resource can have
+					multiple values.</p>
+
+				<p>The main drawback of using accessMode in our context is that it does not describe to the primary mode
+					of access. For instance, a text-based publication which happen to also contain a few images and one
+					audio sample would have an accessMode property with values textual, visual, and auditory, with no
+					indication of which mode is primary, or whether the entire content is accessible with a certain
+					mode. This is where accessModeSufficient can further refine the combinations of accessModes that are
+					needed to consume the content.</p>
+			</section>
+
+			<section id="accessMode-vocabulary">
+				<h3>Vocabulary</h3>
+
+				<section id="auditory">
+					<h4>auditory</h4>
+				</section>
+
+				<section id="chartOnVisual">
+					<h4>chartOnVisual</h4>
+				</section>
+
+				<section id="chemOnVisual">
+					<h4>chemOnVisual</h4>
+				</section>
+
+				<section id="colorDependent">
+					<h4>colorDependent</h4>
+				</section>
+
+				<section id="diagramOnVisual">
+					<h4>diagramOnVisual</h4>
+				</section>
+
+				<section id="mathOnVisual">
+					<h4>mathOnVisual</h4>
+				</section>
+
+				<section id="musicOnVisual">
+					<h4>musicOnVisual</h4>
+				</section>
+
+				<section id="tactile">
+					<h4>tactile</h4>
+				</section>
+
+				<section id="textOnVisual">
+					<h4>textOnVisual</h4>
+				</section>
+
+				<section id="textual">
+					<h4>textual</h4>
+				</section>
+
+				<section id="visual">
+					<h4>visual</h4>
+				</section>
+			</section>
+		</section>
+		<section id="accessModeSufficient">
+			<h2>The <code>accessModeSufficient</code> property</h2>
+
+			<section id="accessModeSufficient-definition">
+				<h3>Definition</h3>
+
+				<p>A list of single or combined accessModes that are sufficient to understand all the intellectual
+					content of a resource.</p>
+			</section>
+
+			<section id="accessModeSufficient-vocabulary">
+				<h3>Vocabulary</h3>
+
+				<section id="ams-auditory">
+					<h4>auditory</h4>
+				</section>
+
+				<section id="ams-tactile">
+					<h4>tactile</h4>
+				</section>
+
+				<section id="ams-textual">
+					<h4>textual</h4>
+				</section>
+
+				<section id="ams-visual">
+					<h4>visual</h4>
+				</section>
+			</section>
+		</section>
+		<section id="examples">
+			<h2>Examples</h2>
+
+			<section id="ex-book">
+				<h3>Book</h3>
+
+				<p>The following example shows how the accessibility metadata is used to enhance Bookshare records. A
+					description of the process of adding this metadata, and a corpus of searchable books, can be found
+					at the <a
+						href="http://www.a11ymetadata.org/bookshare-tags-over-195000-titles-with-accessibility-metadata/"
+						>accessibility metadata website</a>.</p>
+
+				<div class="example">
+					<pre>&lt;div itemscope="" itemtype="http://schema.org/Book">
+   &lt;meta itemprop="bookFormat" content="EBook/DAISY3" />
+   &lt;meta itemprop="accessibilityFeature" content="largePrint" />
+   &lt;meta itemprop="accessibilityFeature" content="highContrastDisplay" />
+   &lt;meta itemprop="accessibilityFeature" content="displayTransformability/resizeText" />
+   &lt;meta itemprop="accessibilityFeature" content="longDescription" />
+   &lt;meta itemprop="accessibilityFeature" content="alternativeText" />
+   &lt;meta itemprop="accessibilityFeature" content="readingOrder" />
+   &lt;meta itemprop="accessibilityFeature" content="structuralNavigation" />
+   &lt;meta itemprop="accessibilityFeature" content="tableOfContents" />
+   &lt;meta itemprop="accessibilityControl" content="fullKeyboardControl" />
+   &lt;meta itemprop="accessibilityControl" content="fullMouseControl" />
+   &lt;meta itemprop="accessibilityHazard" content="noFlashingHazard" />
+   &lt;meta itemprop="accessibilityHazard" content="noMotionSimulationHazard" />
+   &lt;meta itemprop="accessibilityHazard" content="noSoundHazard" />
+   &lt;meta itemprop="accessibilityAPI" content="ARIA" />
+   &lt;dl>
+      &lt;dt>Name:&lt;/dt>
+      &lt;dd itemprop="name">Holt Physical Science&lt;/dd>
+      &lt;dt>Brief Synopsis:&lt;/dt>
+      &lt;dd itemprop="description">NIMAC-sourced textbook&lt;/dd>
+      &lt;dt>Long Synopsis:&lt;/dt>
+      &lt;dd>N/A&lt;/dd>
+      &lt;dt>Book Quality:&lt;/dt>
+      &lt;dd>Publisher Quality&lt;/dd>
+      &lt;dt>Book Size:&lt;/dt>
+      &lt;dd itemprop="numberOfPages">598 Pages&lt;/dd>
+      &lt;dt>ISBN-13:&lt;/dt>
+      &lt;dd itemprop="isbn">9780030426599&lt;/dd>
+      &lt;dt>Publisher:&lt;/dt>
+      &lt;dd itemprop="publisher" itemtype="http://schema.org/Organization" itemscope="">Holt, Rinehart
+         and Winston&lt;/dd>
+      &lt;dt>Date of Addition:&lt;/dt>
+      &lt;dd>06/08/10&lt;/dd>
+      &lt;dt>Copyright Date:&lt;/dt>
+      &lt;dd itemprop="copyrightYear">2007&lt;/dd>
+      &lt;dt>Copyrighted By:&lt;/dt>
+      &lt;dd itemprop="copyrightHolder" itemtype="http://schema.org/Organization" itemscope="">Holt,
+         Rinehart and Winston&lt;/dd>
+      &lt;dt>Adult content:&lt;/dt>
+      &lt;dd>&lt;meta itemprop="isFamilyFriendly" content="true" />No&lt;/dd>
+      &lt;dt>Language:&lt;/dt>
+      &lt;dd>&lt;meta itemprop="inLanguage" content="en-US" />English US&lt;/dd>
+      &lt;dt>Essential Images:&lt;/dt>
+      &lt;dd>861&lt;/dd>
+      &lt;dt>Described Images:&lt;/dt>
+      &lt;dd>910&lt;/dd>
+      &lt;dt>Categories:&lt;/dt>
+      &lt;dd>&lt;span itemprop="genre">Educational Materials&lt;/span>&lt;/dd>
+      &lt;dt>Grade Levels:&lt;/dt>
+      &lt;dd>Sixth grade, Seventh grade, Eighth grade&lt;/dd>
+      &lt;dt>Submitted By:&lt;/dt>
+      &lt;dd>Bookshare Staff&lt;/dd>
+      &lt;dt>NIMAC:&lt;/dt>
+      &lt;dd>This book is currently only available to public K-12 schools and organizations in the United
+         States for use with students with an IEP, because it was created from files supplied by the
+         NIMAC under these restrictions. Learn more in the NIMAC Support Center.&lt;/dd>
+   &lt;/dl>
+   
+   &lt;div class="bookReviews" itemprop="aggregateRating" itemscope=""
+      itemtype="http://schema.org/AggregateRating">
+      &lt;h2>Reviews of Holt Physical Science (&lt;span itemprop="reviewCount">0&lt;/span> reviews)&lt;/h2>
+      &lt;div class="bookReviewScore">
+         &lt;span>&lt;span itemprop="ratingValue">0&lt;/span> - No Rating Yet&lt;/span>
+      &lt;/div>
+   &lt;/div>
+&lt;/div></pre>
+				</div>
+
+				<p>(The source record can be found at https://www.bookshare.org/browse/book/190639.)</p>
+			</section>
+
+			<section id="ex-video">
+				<h3>Video</h3>
+
+				<p>This example shows how the accessibility metadata can be used to augment a record for a video.</p>
+
+				<div class="example">
+					<pre>&lt;dl itemtype="http://schema.org/VideoObject" itemscope="">
+   &lt;dt>Title:&lt;/dt>
+   &lt;dd itemprop="name">Arctic Climate Perspectives&lt;/dd>
+   &lt;dt>Description:&lt;/dt>
+   &lt;dd itemprop="description">This video, adapted from material provided by the ECHO partners,
+      describes how global climate change is affecting Barrow, Alaska.&lt;/dd>
+   &lt;dt>Adaptation Type:&lt;/dt>
+   &lt;dd>&lt;span itemprop="accessibilityFeature">captions&lt;/span>&lt;/dd>
+   &lt;dt>Access Mode:&lt;/dt>
+   &lt;dd>auditory, visual&lt;/dd>
+   &lt;dt>URL:&lt;/dt>
+   &lt;dd>&lt;a itemprop="url" href="http://www.teachersdomain.org/asset/echo07_vid_climate"
+      >http://www.teachersdomain.org/asset/echo07_vid_climate&lt;/a>/&lt;/dd>
+   &lt;dt>Has Adaptation:&lt;/dt>
+   &lt;dd>http://www.teachersdomain.org/asset/echo07_vid_climate_dvs/&lt;/dd>
+   &lt;dt>Subjects:&lt;/dt>
+   &lt;dd>&lt;span itemprop="about">National K-12 Subject::Science::Earth and Space Science::Water Cycle,
+      Weather, and Climate::Structure and Composition of the Atmosphere, National K-12
+      Subject::Science::Earth and Space Science::Water Cycle, Weather, and
+      Climate::Climate&lt;/span>&lt;/dd>
+   &lt;dt>Education Level:&lt;/dt>
+   &lt;dd>Grade 6, Grade 7, Grade 8, Grade 9&lt;/dd>
+   &lt;dt>Audience:&lt;/dt>
+   &lt;dd>&lt;span itemprop="intendedEndUserRole">Learner&lt;/span>&lt;/dd>
+   &lt;dt>Resource Type:&lt;/dt>
+   &lt;dd>&lt;span itemprop="genre">Audio/Visual&lt;/span>, &lt;span itemprop="genre">Movie/Animation&lt;/span>&lt;/dd>
+   &lt;dt>Language:&lt;/dt>
+   &lt;dd>&lt;span itemprop="inLanguage">en-US&lt;/span>&lt;/dd>
+   &lt;dt>Publication Date:&lt;/dt>
+   &lt;dd itemprop="datePublished">2007-02-12&lt;/dd>
+   &lt;dt>Rights:&lt;/dt>
+   &lt;dd>Download and Share, &lt;a itemprop="useRightsUrl"
+      href="http://www.teachersdomain.org/oerlicense/2/"
+      >http://www.teachersdomain.org/oerlicense/2/&lt;/a>&lt;/dd>
+&lt;/dl></pre>
+				</div>
+			</section>
+		</section>
+	</body>
+</html>
