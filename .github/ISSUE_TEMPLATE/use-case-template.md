@@ -9,7 +9,8 @@ assignees: ''
 
 ## Introduction
 
-Brief introduction of the use case
+Brief introduction of the use case.
+Recommend format: As a <Reader | who will benefit from the use case> I would like to <what is the use case> so that <how will benefit from the use case>
 
 ## Detail
 
