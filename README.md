@@ -33,4 +33,4 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md), about licensing contributions.
 
 ---
 
-Group chairs: [Jeff Xu, Rakuten, Inc.](mailto:zheng.xu@rakuten.com) and [Mateus Teixeira, W. W. Norton & Company](mailto:mteixeira@wwnorton.com).
+Group chairs: [Mateus Teixeira, W. W. Norton & Company](mailto:mteixeira@wwnorton.com), Schindler Wolfgang, [Zheng Xu, Gardenia Corp.](mailto:zxu@gardenia-corp.com).
