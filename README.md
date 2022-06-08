@@ -2,7 +2,7 @@
 
 # Publishing Community Group
 
-This is the home repository for work done by the [W3C Publishing Community Group](https://www.w3.org/community/publishingcg/). The Publishing Community Group is the incubator community for [Publishing@W3C](https://www.w3.org/publishing/). The goal of the group is to propose, document, and prototype features broadly related to
+This is the home repository for work done by the [W3C Publishing Community Group](https://www.w3.org/community/publishingcg/) ([Github Page](https://w3c.github.io/publishingcg/)). The Publishing Community Group is the incubator community for [Publishing@W3C](https://www.w3.org/publishing/). The goal of the group is to propose, document, and prototype features broadly related to
 
 - publications on the Web,
 - reading modes and systems,
@@ -33,4 +33,4 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md), about licensing contributions.
 
 ---
 
-Group chairs: [Mateus Teixeira, W. W. Norton & Company](mailto:mteixeira@wwnorton.com), Schindler Wolfgang, [Zheng Xu, Gardenia Corp.](mailto:zxu@gardenia-corp.com).
+Group chairs: [Mateus Teixeira, W. W. Norton & Company](mailto:mteixeira@wwnorton.com), Schindler Wolfgang, [Zheng Xu, Wysebee Inc.](mailto:zxu@wysebee.com).
