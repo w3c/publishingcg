@@ -25,7 +25,7 @@ json-ld: |
           "member": [{
               "@type": "Person",
               "name": "Zheng Xu",
-              "email": "zheng.xu@rakuten.com"
+              "email": "zxu@wysebee.com"
           }]
       }],
       "contactPoint": {
