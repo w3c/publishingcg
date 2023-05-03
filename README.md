@@ -27,7 +27,15 @@ For incubation of Web Platform features, visit the [Web Platform Incubator Commu
 
 [Updates, Meeting Minutes and more](TaskForces/education/index.md)
 
+### Fixed Layout Accessibility
+
+[Updates, Meeting Minutes and more](TaskForces/fxl-a11y/index.md)
+
 ## Tech Reports (Notes)
+
+### Fixed Layout Accessibility
+
+[Preview](TaskForces/fxl-a11y/index.html)
 
 ### Vertical Writing Switching
 
@@ -77,4 +85,4 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md), about licensing contributions.
 
 ---
 
-Group chairs: [Mateus Teixeira, W. W. Norton & Company](mailto:mteixeira@wwnorton.com), Schindler Wolfgang, [Zheng Xu, Wysebee Inc.](mailto:zxu@wysebee.com).
+Group chairs: [Mateus Teixeira, W. W. Norton & Company](mailto:mteixeira@wwnorton.com), Wolfgang Schindler, [Zheng Xu, Wysebee Inc.](mailto:zxu@wysebee.com).
