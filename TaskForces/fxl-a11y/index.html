@@ -135,19 +135,21 @@
 
                 <p>In HTML, the design above would be rendered in reverse reading order.</p>
 
-                <pre>
-                    <body style="width:595px;height:842px">
-                        <div style="width:500px;height:200px;top:400px;position:absolute; … ">
-                            <p …>Bottom object</p>
-                        </div>
-                        <div style="width:500px;height:200px;top:225px;position:absolute; … ">
-                            <p …>Middle object</p>
-                        </div>
-                        <div style="width:500px;height:200px;top:50px;position:absolute; … ">
-                            <p …>Top object</p>
-                        </div>
-                    </body>
-                </pre>
+                <div class="example">
+                    <pre>
+                        &lt;body style="width:595px;height:842px"&gt;
+                            &lt;div style="width:500px;height:200px;top:400px;position:absolute;"&gt;
+                                &lt;p …&gt;Bottom object&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div style="width:500px;height:200px;top:225px;position:absolute;"&gt;
+                                &lt;p …&gt;Middle object&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div style="width:500px;height:200px;top:50px;position:absolute;"&gt;
+                                &lt;p …&gt;Top object&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/body&gt;
+                    </pre>
+                </div>
             </section>
 
             <section id="reading-order-altering">
@@ -168,19 +170,21 @@
 
                 <p>The recommended best practice solution is to adjust the order of the elements in the XHTML page and to preserve the design using CSS <code>z-index</code>.</p>
 
-                <pre>
-                    <body style="width:595px;height:842px">
-                        <div style="z-index:3;width:500px;height:200px;top:50px;position:absolute; … ">
-                            <p …>Top object</p>
-                        </div>
-                        <div style="z-index:2;width:500px;height:200px;top:225px;position:absolute; … ">
-                            <p …>Middle object</p>
-                        </div>
-                        <div style="z-index:1;width:500px;height:200px;top:400px;position:absolute; … ">
-                            <p …>Bottom object</p>
-                        </div>
-                    </body>
-                </pre>
+                <div class="example">
+                    <pre>
+                        &lt;body style="width:595px;height:842px"&gt;
+                            &lt;div style="z-index:3;width:500px;height:200px;top:50px;position:absolute;"&gt;
+                                &lt;p …&gt;Top object&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div style="z-index:2;width:500px;height:200px;top:225px;position:absolute;"&gt;
+                                &lt;p …&gt;Middle object&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div style="z-index:1;width:500px;height:200px;top:400px;position:absolute;"&gt;
+                                &lt;p …&gt;Bottom object&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/body&gt;
+                    </pre>
+                </div>
             </section>
 
             <section id="reading-order-removing">
@@ -190,11 +194,13 @@
 
                 <blockquote>Adding aria-hidden="true" will remove the entire element from the accessibility API. - <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-hidden_attribute">Using the aria-hidden attribute</a></blockquote>
 
-                <pre>
-                    <div aria-hidden="true">
-                        <p class="folio">210</p>
-                    </div>
-                </pre>
+                <div class="example">
+                    <pre>
+                        &lt;div aria-hidden="true"&gt;
+                            &lt;p class="folio"&gt;210&lt;/p&gt;
+                        &lt;/div&gt;
+                    </pre>
+                </div>
             </section>
 
             <section id="reading-order-spreads">
@@ -246,15 +252,17 @@
 
                 <p>When a publication is made of <a href="http://kb.daisy.org/publishing/docs/fxl/svg.html">fixed-layout SVG pages</a> these two elements can be used to describe the content. Note that ARIA attributes (<code>role</code> and <code>aria-describedby</code>) are added to improve support in assistive technologies as SVG is still not well supported.</p>
 
-                <pre>
-                    <body style="width:595px;height:842px">
-                        <svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" role="group" aria-describedby="svgtitle svgdesc">
-                            <title id="svgtitle">The Hydrologic Cycle</title>
-                            <desc id="svgdesc">The continuous cycle by which water …</desc>
-                                …
-                        </svg>
-                    </body>
-                </pre>
+                <div class="example">
+                    <pre>
+                        &lt;body style="width:595px;height:842px"&gt;
+                            &lt;svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" role="group" aria-describedby="svgtitle svgdesc"&gt;
+                                &lt;title id="svgtitle"&gt;The Hydrologic Cycle&lt;/title&gt;
+                                &lt;desc id="svgdesc"&gt;The continuous cycle by which water …&lt;/desc&gt;
+                                    …
+                            &lt;/svg&gt;
+                        &lt;/body&gt;
+                    </pre>
+                </div>
 
                 <aside class="note">
                     The role `group` is given to the image because it contains additional text content (not shown) that the user will interact with. If the image were entirely graphical, the role `img` would be used instead.
@@ -262,14 +270,16 @@
 
                 <p>The <code>title</code> and <code>desc</code> SVG elements can also be used to annotate components of a larger image.</p>
 
-                <pre>
-                    <body style="width:595px;height:842px">
-                        <g fill="lightgray" stroke="gray" role="img" aria-describedby="gtitle">
-                            <title id="gtitle">Rain clouds</title>
-                        …
-                        </g>
-                    </body>
-                </pre>
+                <div class="example">
+                    <pre>
+                        &lt;body style="width:595px;height:842px"&gt;
+                            &lt;g fill="lightgray" stroke="gray" role="img" aria-describedby="gtitle"&gt;
+                                &lt;title id="gtitle"&gt;Rain clouds&lt;/title&gt;
+                            …
+                            &lt;/g&gt;
+                        &lt;/body&gt;
+                    </pre>
+                </div>
 
                 <p>The one problem with using these elements to annotate SVG images is that their content is typically only made available to users of assistive technologies.</p>
 
@@ -365,9 +375,11 @@
 
                 <p>The title of each XHTML page may be displayed to the end reader. As such it should be a meaningful description of the page contents or a page number.</p>
 
-                <pre>
-                    <title>The Technical Basics</title>
-                </pre>
+                <div class="example">
+                    <pre>
+                        &lt;title&gt;The Technical Basics&lt;/title&gt;
+                    </pre>
+                </div>
             </section>
 
             <section id="navigation-ncx">
@@ -401,13 +413,15 @@
 
                 <p>The use of heading tags ensures users do not have to rely on visual styling to understand and navigate the document outline. The structural hierarchy is already being considered at the design stage of visual page layout. By adding this information into the styles on the page and the tags used on export, we pull can this structure into EPUB. For example:</p>
 
-                <pre>
-                    <h2 class="Main-Head">The Technical Basics</h2>
-                    <p class="Paragraph">Photography, in its best form, is a mesh of science and art. You need both. For science, you need to understand the technical elements that affect the image – depth of field, diffraction, exposure, focus, magnification and more. On the artistic side, there are so many considerations from composition, colour, contrast, understanding what “beauty” is perceived as, narratives and storytelling elements and beyond.</p>
-                    <p class="Paragraph">The deeper you can weave the mesh of these two elements, science and art, the more magical your images will become.</p>
-                    <h3 class="Subhead">Understanding Depth of Field</h3>
-                    <p class="Paragraph">There are three primary considerations for how much depth of field – the amount of the scene in focus in the resulting photograph. The size of your aperture, the focal length of your lens, and the distance from your subject all have an impact on how much you’ll get in focus in a single frame.</p>
-                </pre>
+                <div class="example">
+                    <pre>
+                        &lt;h2 class="Main-Head"&gt;The Technical Basics&lt;/h2&gt;
+                        &lt;p class="Paragraph"&gt;Photography, in its best form, is a mesh of science and art. You need both. For science, you need to understand the technical elements that affect the image – depth of field, diffraction, exposure, focus, magnification and more. On the artistic side, there are so many considerations from composition, colour, contrast, understanding what “beauty” is perceived as, narratives and storytelling elements and beyond.&lt;/p&gt;
+                        &lt;p class="Paragraph"&gt;The deeper you can weave the mesh of these two elements, science and art, the more magical your images will become.&lt;/p&gt;
+                        &lt;h3 class="Subhead"&gt;Understanding Depth of Field&lt;/h3&gt;
+                        &lt;p class="Paragraph"&gt;There are three primary considerations for how much depth of field – the amount of the scene in focus in the resulting photograph. The size of your aperture, the focal length of your lens, and the distance from your subject all have an impact on how much you’ll get in focus in a single frame.&lt;/p&gt;
+                    </pre>
+                </div>
             </section>
 
             <section id="navigation-regionbased">
