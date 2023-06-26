@@ -9,6 +9,7 @@ Zoom and IRC information can be found on the [meeting page](https://www.w3.org/e
 ## Meeting Minutes 
 
 [2 May 2023](https://www.w3.org/2023/05/02-epub-fxl-minutes.html)
+[30 May 2023](https://www.w3.org/2023/05/30-epub-fxl-minutes.html)
 
 ## Updates 
 
