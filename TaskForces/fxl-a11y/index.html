@@ -10,10 +10,11 @@
 			//<![CDATA[
             var respecConfig = {
                 group: "publishingcg",
-                specStatus: "CG-DRAFT",
+                specStatus: "ED",
                 shortName: "fxl-a11y",
-                edDraftURI: null,
+                edDraftURI: "https://w3c.github.io/publishingcg/TaskForces/fxl-a11y/",
                 previousPublishDate: "2023-05-02",
+                previousMaturity: "NOTE",
                 copyrightStart: "2021",
                 noRecTrack: true,
                 editors:[ {
@@ -26,7 +27,7 @@
                 permalinkEdge: true,
                 permalinkHide: false,
                 github: {
-                    repoURL: "https://github.com/w3c/publishingcg",
+                    repoURL: "https://github.com/w3c/epub-specs",
                     branch: "main"
                 },
                 pluralize: true,
@@ -76,25 +77,6 @@
                 <p>In particular, the needs of people with low vision or learning disabilities that rely on the transformation of text are still almost impossible to accommodate in fixed layout content. Content creators concerned about this may choose not to use fixed layout.</p>
 
                 <p>We want to recognize these challenges for content creators, and in this document will outline some techniques for producing more accessible fixed layout content. We encourage content creators to explore the full range of options for accessibility that digital publications present, even when creating fixed layout publications.</p>
-            </section>
-
-            <section id="intro-goal">
-                <h3>What does an accessible fixed layout EPUB look like?</h3>
-
-                <p>Accessible fixed layout is challenging to produce, but not impossible. This document will cover the most important considerations content creators need to make.</p>
-
-                <p>Accessible fixed layout content requires the following considerations:</p>
-
-                <ul>
-                    <li>All textual content is provided to the user through the XHTML file or as a textual alternative to the page</li>
-                    <li>All images, diagrams, and visualizations have textual alternatives where appropriate</li>
-                    <li>Tables are coded properly, and provided textual descriptions</li>
-                    <li>Multimedia content is accessible, with textual alternatives, subtitles, or descriptions</li>
-                    <li>All pages in the book are laid out in the proper reading order, with the visual order matching the non-visual one</li>
-                    <li>Images and text have proper colour contrast</li>
-                    <li>Accessibility metadata listing the book's features is provided</li>
-                    <li>The book is fully tested using assistive technology and reading systems</li>
-                </ul>
             </section>
         </section>
 
@@ -155,17 +137,17 @@
 
                 <div class="example">
                     <pre>
-&lt;body style="width:595px;height:842px"&gt;
-    &lt;div style="width:500px;height:200px;top:400px;position:absolute;"&gt;
-        &lt;p …&gt;Bottom object&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div style="width:500px;height:200px;top:225px;position:absolute;"&gt;
-        &lt;p …&gt;Middle object&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div style="width:500px;height:200px;top:50px;position:absolute;"&gt;
-        &lt;p …&gt;Top object&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/body&gt;
+                        &lt;body style="width:595px;height:842px"&gt;
+                            &lt;div style="width:500px;height:200px;top:400px;position:absolute;"&gt;
+                                &lt;p …&gt;Bottom object&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div style="width:500px;height:200px;top:225px;position:absolute;"&gt;
+                                &lt;p …&gt;Middle object&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div style="width:500px;height:200px;top:50px;position:absolute;"&gt;
+                                &lt;p …&gt;Top object&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/body&gt;
                     </pre>
                 </div>
             </section>
@@ -190,17 +172,17 @@
 
                 <div class="example">
                     <pre>
-&lt;body style="width:595px;height:842px"&gt;
-    &lt;div style="z-index:3;width:500px;height:200px;top:50px;position:absolute;"&gt;
-        &lt;p …&gt;Top object&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div style="z-index:2;width:500px;height:200px;top:225px;position:absolute;"&gt;
-        &lt;p …&gt;Middle object&lt;/p&gt;
-    &lt;/div&gt;
-    &lt;div style="z-index:1;width:500px;height:200px;top:400px;position:absolute;"&gt;
-        &lt;p …&gt;Bottom object&lt;/p&gt;
-    &lt;/div&gt;
-&lt;/body&gt;
+                        &lt;body style="width:595px;height:842px"&gt;
+                            &lt;div style="z-index:3;width:500px;height:200px;top:50px;position:absolute;"&gt;
+                                &lt;p …&gt;Top object&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div style="z-index:2;width:500px;height:200px;top:225px;position:absolute;"&gt;
+                                &lt;p …&gt;Middle object&lt;/p&gt;
+                            &lt;/div&gt;
+                            &lt;div style="z-index:1;width:500px;height:200px;top:400px;position:absolute;"&gt;
+                                &lt;p …&gt;Bottom object&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/body&gt;
                     </pre>
                 </div>
             </section>
@@ -214,9 +196,9 @@
 
                 <div class="example">
                     <pre>
-&lt;div aria-hidden="true"&gt;
-    &lt;p class="folio"&gt;210&lt;/p&gt;
-&lt;/div&gt;
+                        &lt;div aria-hidden="true"&gt;
+                            &lt;p class="folio"&gt;210&lt;/p&gt;
+                        &lt;/div&gt;
                     </pre>
                 </div>
             </section>
@@ -272,13 +254,13 @@
 
                 <div class="example">
                     <pre>
-&lt;body style="width:595px;height:842px"&gt;
-    &lt;svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" role="group" aria-describedby="svgtitle svgdesc"&gt;
-        &lt;title id="svgtitle"&gt;The Hydrologic Cycle&lt;/title&gt;
-        &lt;desc id="svgdesc"&gt;The continuous cycle by which water …&lt;/desc&gt;
-            …
-    &lt;/svg&gt;
-&lt;/body&gt;
+                        &lt;body style="width:595px;height:842px"&gt;
+                            &lt;svg xmlns="http://www.w3.org/2000/svg" xml:lang="en" role="group" aria-describedby="svgtitle svgdesc"&gt;
+                                &lt;title id="svgtitle"&gt;The Hydrologic Cycle&lt;/title&gt;
+                                &lt;desc id="svgdesc"&gt;The continuous cycle by which water …&lt;/desc&gt;
+                                    …
+                            &lt;/svg&gt;
+                        &lt;/body&gt;
                     </pre>
                 </div>
 
@@ -290,12 +272,12 @@
 
                 <div class="example">
                     <pre>
-&lt;body style="width:595px;height:842px"&gt;
-    &lt;g fill="lightgray" stroke="gray" role="img" aria-describedby="gtitle"&gt;
-    &lt;title id="gtitle"&gt;Rain clouds&lt;/title&gt;
-        …
-    &lt;/g&gt;
-&lt;/body&gt;
+                        &lt;body style="width:595px;height:842px"&gt;
+                            &lt;g fill="lightgray" stroke="gray" role="img" aria-describedby="gtitle"&gt;
+                                &lt;title id="gtitle"&gt;Rain clouds&lt;/title&gt;
+                            …
+                            &lt;/g&gt;
+                        &lt;/body&gt;
                     </pre>
                 </div>
 
@@ -395,7 +377,7 @@
 
                 <div class="example">
                     <pre>
-&lt;title&gt;The Technical Basics&lt;/title&gt;
+                        &lt;title&gt;The Technical Basics&lt;/title&gt;
                     </pre>
                 </div>
             </section>
@@ -433,11 +415,11 @@
 
                 <div class="example">
                     <pre>
-&lt;h2 class="Main-Head"&gt;The Technical Basics&lt;/h2&gt;
-&lt;p class="Paragraph"&gt;Photography, in its best form, is a mesh of science and art. You need both. For science, you need to understand the technical elements that affect the image – depth of field, diffraction, exposure, focus, magnification and more. On the artistic side, there are so many considerations from composition, colour, contrast, understanding what “beauty” is perceived as, narratives and storytelling elements and beyond.&lt;/p&gt;
-&lt;p class="Paragraph"&gt;The deeper you can weave the mesh of these two elements, science and art, the more magical your images will become.&lt;/p&gt;
-&lt;h3 class="Subhead"&gt;Understanding Depth of Field&lt;/h3&gt;
-&lt;p class="Paragraph"&gt;There are three primary considerations for how much depth of field – the amount of the scene in focus in the resulting photograph. The size of your aperture, the focal length of your lens, and the distance from your subject all have an impact on how much you’ll get in focus in a single frame.&lt;/p&gt;
+                        &lt;h2 class="Main-Head"&gt;The Technical Basics&lt;/h2&gt;
+                        &lt;p class="Paragraph"&gt;Photography, in its best form, is a mesh of science and art. You need both. For science, you need to understand the technical elements that affect the image – depth of field, diffraction, exposure, focus, magnification and more. On the artistic side, there are so many considerations from composition, colour, contrast, understanding what “beauty” is perceived as, narratives and storytelling elements and beyond.&lt;/p&gt;
+                        &lt;p class="Paragraph"&gt;The deeper you can weave the mesh of these two elements, science and art, the more magical your images will become.&lt;/p&gt;
+                        &lt;h3 class="Subhead"&gt;Understanding Depth of Field&lt;/h3&gt;
+                        &lt;p class="Paragraph"&gt;There are three primary considerations for how much depth of field – the amount of the scene in focus in the resulting photograph. The size of your aperture, the focal length of your lens, and the distance from your subject all have an impact on how much you’ll get in focus in a single frame.&lt;/p&gt;
                     </pre>
                 </div>
             </section>
@@ -580,9 +562,9 @@
             <div class="example" id="metadata-example-1">
                 <p>An example of package metadata for a fixed layout publication.</p>
                 <pre>
-&lt;meta property="rendition:layout"&gt;pre-paginated&lt;/meta&gt;
-&lt;meta property="rendition:orientation"&gt;auto&lt;/meta&gt;
-&lt;meta property="rendition:spread"&gt;auto&lt;/meta&gt;
+                    &lt;meta property="rendition:layout"&gt;pre-paginated&lt;/meta&gt;
+                    &lt;meta property="rendition:orientation"&gt;auto&lt;/meta&gt;
+                    &lt;meta property="rendition:spread"&gt;auto&lt;/meta&gt;
                 </pre>
             </div>
         </section>
@@ -608,12 +590,12 @@
 
                 <div class="example" id="metadata-example-2">
                     <pre>
-&lt;meta property="schema:accessibilityFeature"&gt;
-    alternativeText
-&lt;/meta&gt;
-&lt;meta property="schema:accessibilityFeature"&gt;
-    readingOrder
-&lt;/meta&gt;
+                    &lt;meta property="schema:accessibilityFeature"&gt;
+                        alternativeText
+                    &lt;/meta&gt;
+                    &lt;meta property="schema:accessibilityFeature"&gt;
+                        readingOrder
+                    &lt;/meta&gt;
                     </pre>
                 </div>
             </section>
@@ -626,22 +608,21 @@
                 <p>A picture book would only have an <code>accessMode</code> of <code>visual</code>.</p>
 
                 <div class="example" id="metadata-example-3">
-                    <pre>
-&lt;meta property="schema:accessMode"&gt;
-    visual
-&lt;/meta&gt;</pre>
+                    <pre>&lt;meta property="schema:accessMode"&gt;
+                        visual
+                    &lt;/meta&gt;</pre>
                 </div>
 
                 <p>A fixed layout book which contains both text and images would have two separate <code>accessMode</code>s defined.</p>
 
                 <div class="example" id="metadata-example-4">
                     <pre>
-&lt;meta property="schema:accessMode"&gt;
-    visual
-&lt;/meta&gt;
-&lt;meta property="schema:accessMode"&gt;
-    textual
-&lt;/meta&gt;
+                    &lt;meta property="schema:accessMode"&gt;
+                        visual
+                    &lt;/meta&gt;
+                    &lt;meta property="schema:accessMode"&gt;
+                        textual
+                    &lt;/meta&gt;
                     </pre>
                 </div>  
             </section>
@@ -654,31 +635,25 @@
                 <p>For picture books with no text, or no alternative text, the way one would consume this would be completely visually so having <code>accessModeSufficient</code> of <code>visual</code> would be solely defined.</p>
 
                 <div class="example" id="metadata-example-5">
-                    <pre>
-&lt;meta property="schema:accessModeSufficient"&gt;
-    visual
-&lt;/meta&gt;
-                    </pre>
+                    <pre>&lt;meta property="schema:accessModeSufficient"&gt;
+                        visual
+                    &lt;/meta&gt;</pre>
                 </div>
 
                 <p>For Fixed Layout books that have both visual and textual elements then having <code>accessModeSufficient</code> of <code>visual,textual</code> would be appropriate. In addition, if the Fixed Layout book is primarily images that are fully described, <code>textual</code> would also apply, as this implies the boook is Screen Reader Friendly and can be fully read by assistive technology.</p>
 
                 <div class="example" id="metadata-example-6">
-                    <pre>
-&lt;meta property="schema:accessModeSufficient"&gt;
-    visual,textual
-&lt;/meta&gt;
-                    </pre>
+                    <pre>&lt;meta property="schema:accessModeSufficient"&gt;
+                        visual,textual
+                    &lt;/meta&gt;</pre>
                 </div>
 
                 <p>If a Fixed Layout book has all images fully described then having <code>accessModeSufficient</code> of <code>textual</code> would be appropriate which implies this book is Screen Reader Friendly and can be fully read by assistive technology.</p>
 
                 <div class="example" id="metadata-example-7">
-                    <pre>
-&lt;meta property="schema:accessModeSufficient"&gt;
-    textual
-&lt;/meta&gt;
-                    </pre>
+                    <pre>&lt;meta property="schema:accessModeSufficient"&gt;
+                        textual
+                    &lt;/meta&gt;</pre>
                 </div>
             </section>
 
@@ -692,10 +667,9 @@
                 <p>If there are no hazards within the book one can simply have <code>none</code> or can call out each specific non-hazard explicitly by stating <code>noFlashingHazard</code>, <code>noSoundHazard</code>, and <code>noMotionSimulationHazard</code>.</p>
 
                 <div class="example" id="metadata-example-8">
-                    <pre>
-&lt;meta property="schema:accessibilityHazard"&gt;
-    none
-&lt;/meta&gt;</pre>
+                    <pre>&lt;meta property="schema:accessibilityHazard"&gt;
+                        none
+                    &lt;/meta&gt;</pre>
                 </div>
             </section>
 
@@ -706,11 +680,11 @@
 
                 <div class="example" id="metadata-example-9">
                     <pre>
-&lt;meta property="schema:accessibilitySummary"&gt;
-    This Fixed Layout EPUB contains a lot of visual formatting
-    where images can span over two pages.  All images do have
-    a textual description to aid in accessibility.
-&lt;/meta&gt;
+                        &lt;meta property="schema:accessibilitySummary"&gt;
+                        This Fixed Layout EPUB contains a lot of visual formatting
+                        where images can span over two pages.  All images do have
+                        a textual description to aid in accessibility.
+                    &lt;/meta&gt;
                     </pre>
                 </div>
             </section>
