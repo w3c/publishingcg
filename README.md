@@ -13,23 +13,16 @@ These topics are general and the community errs on the side of inclusive discuss
 
 For incubation of Web Platform features, visit the [Web Platform Incubator Community Group (WICG)](https://www.w3.org/community/wicg/).
 
-## Task Forces
+## Active Task Forces
 
-### Accessibility
+* Accessibility Task force works and discussions are located at [w3c publ-a11y GitHub repo](https://github.com/w3c/publ-a11y/)
+* Fixed Layout Accessibility  Task force [Updates, Meeting Minutes and more](TaskForces/fxl-a11y/index.md)
 
-[Updates, Meeting Minutes and more](TaskForces/a11y/index.md)
 
-### Documentation
+## Inactive task forces
+* Documentation Task force [Updates, Meeting Minutes and more](TaskForces/documentation/index.md)
+* Education Task force [Updates, Meeting Minutes and more](TaskForces/education/index.md)
 
-[Updates, Meeting Minutes and more](TaskForces/documentation/index.md)
-
-### Education
-
-[Updates, Meeting Minutes and more](TaskForces/education/index.md)
-
-### Fixed Layout Accessibility
-
-[Updates, Meeting Minutes and more](TaskForces/fxl-a11y/index.md)
 
 ## Tech Reports (Notes)
 
