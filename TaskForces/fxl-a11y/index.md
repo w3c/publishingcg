@@ -1,4 +1,7 @@
-# Fixed Layout Accessibility Taskforce
+---
+title: Fixed Layout Accessibility Taskforce folder
+date: 2025-01-30
+---
 
 The fixed layout accessibility taskforce incubated in the Publishing CG and is now a joint work of the Publishing CG and Maintenance WG. 
 
@@ -12,8 +15,6 @@ Two editor's drafts are currently being developped from the epub33 repo.
 New issues should be opened on this repo, using the [FXL-A11Y Issue template](https://github.com/w3c/publishingcg/issues/new?template=fxl-a11y-template.md)
 
 Old issues are flagged on this repo with the [FXL A11Y label](https://github.com/w3c/publishingcg/issues?q=is%3Aissue%20fxl%20label%3A%22FXL%20A11y%22) and on the epub33 repo with the [Spec-FXL-A11y label](https://github.com/w3c/epub-specs/issues?q=is%3Aissue%20%20label%3ASpec-FXL-A11y%20). 
-
-
 
 ## Meeting Details 
 
