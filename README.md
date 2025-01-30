@@ -18,21 +18,14 @@ For incubation of Web Platform features, visit the [Web Platform Incubator Commu
 * Accessibility Task force works and discussions are located at [w3c publ-a11y GitHub repo](https://github.com/w3c/publ-a11y/)
 * Fixed Layout Accessibility  Task force [Updates, Meeting Minutes and more](TaskForces/fxl-a11y/index.md)
 
-
 ## Inactive task forces
 * Documentation Task force [Updates, Meeting Minutes and more](TaskForces/documentation/index.md)
 * Education Task force [Updates, Meeting Minutes and more](TaskForces/education/index.md)
 
-
 ## Tech Reports (Notes)
 
-### Fixed Layout Accessibility
-
-[Preview](TaskForces/fxl-a11y/index.html)
-
-### Vertical Writing Switching
-
-[Preview](https://htmlpreview.github.io/?https://github.com/w3c/publishingcg/blob/master/TaskForces/vertical-writing-switching/altss-tags.html)
+*  Fixed Layout Accessibility [Preview](TaskForces/fxl-a11y/index.html)
+* Vertical Writing Switching [Preview](https://htmlpreview.github.io/?https://github.com/w3c/publishingcg/blob/master/TaskForces/vertical-writing-switching/altss-tags.html)
 
 ## Meetings
 
@@ -57,16 +50,6 @@ For incubation of Web Platform features, visit the [Web Platform Incubator Commu
 * [EPUB 3.3 Tests](https://w3c.github.io/epub-tests/)
 * [How to write tests](https://w3c.github.io/epub-tests/contributing)
 
-## Contributing to the Publishing Community Group
-
-> [Join the Publishing CG](https://www.w3.org/community/wp-login.php?redirect_to=%2Fcommunity%2Fpublishingcg%2Fjoin) before making contributions.
-
-Use the standard fork, branch, and pull request workflow to propose changes to group documents. Make branch names informatively, including the related issue number, for example. If you need help with git, see [W3C on GitHub](https://w3c.github.io/). Chairs are happy to help you get started.
-
-Editorial changes that improve the readability or correct spelling or grammatical mistakes are welcome.
-
-Please read [CONTRIBUTING.md](CONTRIBUTING.md), about licensing contributions.
-
 ## Ways to Contribute
 
 - [Join the CG](https://www.w3.org/community/wp-login.php?redirect_to=%2Fcommunity%2Fpublishingcg%2Fjoin) and participate in group calls.
@@ -76,6 +59,14 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md), about licensing contributions.
 - Contribute to documentation and prototypes as well as you can. Members are encouraged to contribute with their own expertise.
 - Help identify overlapping communities that could benefit from our work, or help mature ideas graduate into dedicated communities, such as W3C working groups.
 
----
+Use the standard fork, branch, and pull request workflow to propose changes to group documents. Make branch names informatively, including the related issue number, for example. If you need help with git, see [W3C on GitHub](https://w3c.github.io/). Chairs are happy to help you get started.
 
-Group chairs: [Mateus Teixeira, W. W. Norton & Company](mailto:mteixeira@wwnorton.com), Wolfgang Schindler, [Zheng Xu, Wysebee Inc.](mailto:zxu@wysebee.com).
+Editorial changes that improve the readability or correct spelling or grammatical mistakes are welcome.
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md), about licensing contributions.
+
+
+## Previous works and related repos
+
+[EPUB 3 Community Group General Repository](https://github.com/w3c/publ-cg)
+
