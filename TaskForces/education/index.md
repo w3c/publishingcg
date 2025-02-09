@@ -20,4 +20,4 @@ This TF needs a leader.
 
 * exercise / answers
 * way to submit and collect answers
-* connection between EPUb and a LMS
+* connection between EPUB and a LMS
