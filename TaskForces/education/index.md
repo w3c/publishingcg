@@ -20,4 +20,5 @@ This TF needs a leader.
 
 * exercise / answers
 * way to submit and collect answers
+* way to evaluate answers and provide feedback
 * connection between EPUB and a LMS
