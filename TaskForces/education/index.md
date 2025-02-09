@@ -6,7 +6,7 @@ active: false
 
 The education Task force aims to discuss and incubate needs related to educational contents. 
 
-Most of this task force work was integrated in the main EPUB 33 spec thru time. 
+Most of this task force work was integrated in the main EPUB 33 spec through time. 
 
 ## Discussions in Issues
 
