@@ -13,24 +13,21 @@ These topics are general and the community errs on the side of inclusive discuss
 
 For incubation of Web Platform features, visit the [Web Platform Incubator Community Group (WICG)](https://www.w3.org/community/wicg/).
 
+## Meetings
+
+[Monthly CG Meeting Minutes and Agenda](Meetings/index.md)
+
 ## Active Task Forces
 
 * Accessibility Task force works and discussions are located at [w3c publ-a11y GitHub repo](https://github.com/w3c/publ-a11y/)
-* [Fixed Layout Accessibility Task force](TaskForces/fxl-a11y/index.md)
+* [Fixed Layout Accessibility Task force](TaskForces/fxl-a11y/index.md) produced Fixed Layout Accessibility [Preview](TaskForces/fxl-a11y/index.html)
 * [Anti Counterfeit Task Force](TaskForces/anti-counterfeit/index.md)
 
 ## Dormant task forces
 * [Documentation Task force](TaskForces/documentation/index.md)
 * [Education Task force](TaskForces/education/index.md)
+* [TaskForce vertical-writing-switching](https://github.com/w3c/publishingcg/tree/master/TaskForces/vertical-writing-switching) produced [Alternate Style Tags 1.2 draft](https://htmlpreview.github.io/?https://github.com/w3c/publishingcg/blob/master/TaskForces/vertical-writing-switching/altss-tags.html). 
 
-## Tech Reports (Notes)
-
-* Fixed Layout Accessibility [Preview](TaskForces/fxl-a11y/index.html)
-* Vertical Writing Switching [Preview](https://htmlpreview.github.io/?https://github.com/w3c/publishingcg/blob/master/TaskForces/vertical-writing-switching/altss-tags.html)
-
-## Meetings
-
-[Monthly CG Meeting Minutes and Agenda](Meetings/index.md)
 
 ## Useful Links
 
