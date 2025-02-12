@@ -13,5 +13,5 @@ The documentation Task force aims to write, publish and maintain documentation t
 
 ## Tasks and todos
 
-This TF needs a leader. In the meanwhile, ressources can be linked from the documentation [ressources page on this repository](documentation-ressources). 
+Ressources can be linked from the documentation [ressources page on this repository](documentation-ressources). 
 
