@@ -10,7 +10,7 @@ Most of this task force work was integrated in the main EPUB 33 spec through tim
 
 ## Discussions in Issues
 
-Issues are using [label:"Ed TF"](https://github.com/w3c/publishingcg/issues?q=label%3A%22Ed%20TF%22%20)  
+Issues are using [label:"Ed TF"](https://github.com/w3c/publishingcg/labels/Education%20TF)  
 
 
 ## Topics that have found no clear response
