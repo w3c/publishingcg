@@ -16,15 +16,16 @@ For incubation of Web Platform features, visit the [Web Platform Incubator Commu
 ## Active Task Forces
 
 * Accessibility Task force works and discussions are located at [w3c publ-a11y GitHub repo](https://github.com/w3c/publ-a11y/)
-* Fixed Layout Accessibility  Task force [Updates, Meeting Minutes and more](TaskForces/fxl-a11y/index.md)
+* [Fixed Layout Accessibility Task force](TaskForces/fxl-a11y/index.md)
+* [Anti Counterfeit Task Force](TaskForces/anti-counterfeit/index.md)
 
-## Inactive task forces
-* Documentation Task force [Updates, Meeting Minutes and more](TaskForces/documentation/index.md)
-* Education Task force [Updates, Meeting Minutes and more](TaskForces/education/index.md)
+## Dormant task forces
+* [Documentation Task force](TaskForces/documentation/index.md)
+* [Education Task force](TaskForces/education/index.md)
 
 ## Tech Reports (Notes)
 
-*  Fixed Layout Accessibility [Preview](TaskForces/fxl-a11y/index.html)
+* Fixed Layout Accessibility [Preview](TaskForces/fxl-a11y/index.html)
 * Vertical Writing Switching [Preview](https://htmlpreview.github.io/?https://github.com/w3c/publishingcg/blob/master/TaskForces/vertical-writing-switching/altss-tags.html)
 
 ## Meetings
