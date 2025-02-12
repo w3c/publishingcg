@@ -3,10 +3,10 @@ title: Documentation ressources for EPUB
 date: 2025-01-30
 ---
 
-## tiers documentations
+## third party documentations
 
 * [DAISY Accessible Publishing Knowledge Base](http://kb.daisy.org/publishing/docs/) The Accessible Publishing Knowledge Base is your guide to accessible production practices for the creation of digital publications.
-* [(work in progress) The digital book quality reference list](https://qualebook.edrlab.org/en/)
+<!-- * [(work in progress) The digital book quality reference list](https://qualebook.edrlab.org/en/) -->
 
 ## epub-spec repo documentations
 
