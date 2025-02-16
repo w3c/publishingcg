@@ -4,7 +4,6 @@ about: Template used to define a use case
 title: ''
 labels: ''
 assignees: ''
-
 ---
 
 ## Introduction

@@ -1,0 +1,85 @@
+---
+title: Documentation ressources for EPUB
+date: 2025-01-30
+---
+
+## third party documentations
+
+* [DAISY Accessible Publishing Knowledge Base](http://kb.daisy.org/publishing/docs/) The Accessible Publishing Knowledge Base is your guide to accessible production practices for the creation of digital publications.
+<!-- * [(work in progress) The digital book quality reference list](https://qualebook.edrlab.org/en/) -->
+
+## epub-spec repo documentations
+
+* [Guide to Optimized Publication Standards][docs/optimized-pubs/](https://w3c.github.io/epub-specs/epub33/docs/optimized-pubs/)
+* [epub Accessibility Frequently Asked Questions][docs/a11y-faq/](https://w3c.github.io/epub-specs/epub33/docs/a11y-faq/)
+
+## epub-specs 33 repo links
+
+* [a11y](https://w3c.github.io/epub-specs/epub33/a11y) 
+* [a11y/index.html](https://w3c.github.io/epub-specs/epub33/a11y/index.html) 
+* [a11y-exemption](https://w3c.github.io/epub-specs/epub33/a11y-exemption) 
+* [a11y-exemption/snapshot](https://w3c.github.io/epub-specs/epub33/a11y-exemption/snapshot) 
+* [a11y-exemption/index.html](https://w3c.github.io/epub-specs/epub33/a11y-exemption/index.html) 
+* [a11y-tech](https://w3c.github.io/epub-specs/epub33/a11y-tech) 
+* [a11y-tech/index.html](https://w3c.github.io/epub-specs/epub33/a11y-tech/index.html) 
+* [common](https://w3c.github.io/epub-specs/epub33/common) 
+* [core](https://w3c.github.io/epub-specs/epub33/core) 
+* [core/images](https://w3c.github.io/epub-specs/epub33/core/images) 
+* [core/vocab](https://w3c.github.io/epub-specs/epub33/core/vocab) 
+* [core/biblio.js](https://w3c.github.io/epub-specs/epub33/core/biblio.js) 
+* [core/index.html](https://w3c.github.io/epub-specs/epub33/core/index.html) 
+* [cr-snapshot](https://w3c.github.io/epub-specs/epub33/cr-snapshot) 
+* [cr-snapshot-2](https://w3c.github.io/epub-specs/epub33/cr-snapshot-2) 
+* [epub-a11y-eaa-mapping](https://w3c.github.io/epub-specs/epub33/epub-a11y-eaa-mapping) 
+* [epub-a11y-eaa-mapping/index.html](https://w3c.github.io/epub-specs/epub33/epub-a11y-eaa-mapping/index.html) 
+* [epub-aria-authoring](https://w3c.github.io/epub-specs/epub33/epub-aria-authoring) 
+* [epub-aria-authoring/snapshot](https://w3c.github.io/epub-specs/epub33/epub-aria-authoring/snapshot) 
+* [epub-aria-authoring/index.html](https://w3c.github.io/epub-specs/epub33/epub-aria-authoring/index.html) 
+* [epubcfi](https://w3c.github.io/epub-specs/epub33/epubcfi) 
+* [epubcfi/index.html](https://w3c.github.io/epub-specs/epub33/epubcfi/index.html) 
+* [explainers](https://w3c.github.io/epub-specs/epub33/explainers) 
+* [explainers/EPUB-33-security-privacy.md](https://w3c.github.io/epub-specs/epub33/explainers/EPUB-33-security-privacy.md) !
+* [explainers/epub-folder-structure.png](https://w3c.github.io/epub-specs/epub33/explainers/epub-folder-structure.png) 
+* [explainers/EPUB33-explainer.md](https://w3c.github.io/epub-specs/epub33/explainers/EPUB33-explainer.md) 
+* [fxl-a11y](https://w3c.github.io/epub-specs/epub33/fxl-a11y) 
+* [fxl-a11y/index.html](https://w3c.github.io/epub-specs/epub33/fxl-a11y/index.html) 
+* [fxl-a11y-tech](https://w3c.github.io/epub-specs/epub33/fxl-a11y-tech) 
+* [fxl-a11y-tech/images](https://w3c.github.io/epub-specs/epub33/fxl-a11y-tech/images) 
+* [fxl-a11y-tech/index.html](https://w3c.github.io/epub-specs/epub33/fxl-a11y-tech/index.html) 
+* [index-page](https://w3c.github.io/epub-specs/epub33/index-page) 
+* [index-page/index.html](https://w3c.github.io/epub-specs/epub33/index-page/index.html) 
+* [locators](https://w3c.github.io/epub-specs/epub33/locators) 
+* [locators/index.html](https://w3c.github.io/epub-specs/epub33/locators/index.html) 
+* [multi-rend](https://w3c.github.io/epub-specs/epub33/multi-rend) 
+* [multi-rend/index.html](https://w3c.github.io/epub-specs/epub33/multi-rend/index.html) 
+* [overview](https://w3c.github.io/epub-specs/epub33/overview) 
+* [overview/images](https://w3c.github.io/epub-specs/epub33/overview/images) 
+* [overview/biblio.js](https://w3c.github.io/epub-specs/epub33/overview/biblio.js) 
+* [overview/index.html](https://w3c.github.io/epub-specs/epub33/overview/index.html) 
+* [pr-snapshot](https://w3c.github.io/epub-specs/epub33/pr-snapshot) 
+* [rec-snapshot](https://w3c.github.io/epub-specs/epub33/rec-snapshot) 
+* [releases](https://w3c.github.io/epub-specs/epub33/releases) 
+* [reports](https://w3c.github.io/epub-specs/epub33/reports) 
+* [reports/a11y-properties-use.html](https://w3c.github.io/epub-specs/epub33/reports/a11y-properties-use.html) 
+* [reports/a11y-properties-use.md](https://w3c.github.io/epub-specs/epub33/reports/a11y-properties-use.md) 
+* [reports/a11y-usage.html](https://w3c.github.io/epub-specs/epub33/reports/a11y-usage.html) 
+* [reports/a11y-usage.md](https://w3c.github.io/epub-specs/epub33/reports/a11y-usage.md) 
+* [reports/epub-properties-use.html](https://w3c.github.io/epub-specs/epub33/reports/epub-properties-use.html) 
+* [reports/epub-properties-use.md](https://w3c.github.io/epub-specs/epub33/reports/epub-properties-use.md) 
+* [reports/exit_criteria.html](https://w3c.github.io/epub-specs/epub33/reports/exit_criteria.html) 
+* [reports/index.html](https://w3c.github.io/epub-specs/epub33/reports/index.html) 
+* [rs](https://w3c.github.io/epub-specs/epub33/rs) 
+* [rs/index.html](https://w3c.github.io/epub-specs/epub33/rs/index.html) 
+* [ssv](https://w3c.github.io/epub-specs/epub33/ssv) 
+* [ssv/index.html](https://w3c.github.io/epub-specs/epub33/ssv/index.html) 
+* [tts](https://w3c.github.io/epub-specs/epub33/tts) 
+* [tts/index.html](https://w3c.github.io/epub-specs/epub33/tts/index.html) 
+* [update-20241017](https://w3c.github.io/epub-specs/epub33/update-20241017) 
+* [update-20241017/epub-33](https://w3c.github.io/epub-specs/epub33/update-20241017/epub-33) 
+* [update-20241017/epub-33/images](https://w3c.github.io/epub-specs/epub33/update-20241017/epub-33/images) 
+* [update-20241017/epub-33/index.html](https://w3c.github.io/epub-specs/epub33/update-20241017/epub-33/index.html) 
+* [update-20241017/epub-a11y-11](https://w3c.github.io/epub-specs/epub33/update-20241017/epub-a11y-11) 
+* [update-20241017/epub-a11y-11/index.html](https://w3c.github.io/epub-specs/epub33/update-20241017/epub-a11y-11/index.html) 
+* [update-20241017/epub-rs-33](https://w3c.github.io/epub-specs/epub33/update-20241017/epub-rs-33) 
+* [update-20241017/epub-rs-33/index.html](https://w3c.github.io/epub-specs/epub33/update-20241017/epub-rs-33/index.html) 
+* [errata.html](https://w3c.github.io/epub-specs/epub33/errata.html)
