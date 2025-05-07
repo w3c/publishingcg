@@ -38,11 +38,11 @@
 </head>
 <body>
     {% include header.html %}
-    {% include nav.html %}
-     <main>
-       {{ content }}
+    <main>
+        {% include nav.html %}
+        <section>{{ content }}</section>
+        {% include aside.html %}
     </main>
-    {% include aside.html %}
     {% include footer.html %}
 </body>
 </html>
