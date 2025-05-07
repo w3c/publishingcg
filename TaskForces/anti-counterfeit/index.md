@@ -2,6 +2,7 @@
 title: Anti Counterfeit Task Force
 date: 2025-01-30
 active: false
+layout: home
 ---
 
 ## Discussions in Issues

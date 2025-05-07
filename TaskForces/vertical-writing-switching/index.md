@@ -2,6 +2,7 @@
 title: Vertical writing switching
 date: 2025-01-30
 active: false
+layout: home
 ---
 
 > *In Japan, some persons with print disabilities find either horizontal or vertical writing particularly difficult. Dyslexic persons often have problems with vertical writing. Meanwhile, persons with autism or optic stenosis often have problems with horizontal writing. An experiment (see Section 3 of this document) conducted by KOUYAMA Tadashi reveals that dyslexic people tend to have more problems with vertical writing. More information (in Japanese) about his experiment is available here.*

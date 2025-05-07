@@ -36,3 +36,4 @@ json-ld: |
       }
   }
 ---
+This is the home of the Publishing Community Group

@@ -1,6 +1,7 @@
 ---
 title: Fixed Layout Content Types
 date: 2023-11-11
+layout: home
 ---
 
 While some of these content types can use reflowable, many use fixed layout to preserve formatting from the print edition. Some of these content types use fixed layout almost exclusively due to the style of the content. To understand the use cases for the content and its formatting, we've isolated common component types for each content type. These component types can help us determine what approaches may be taken to help make the content more accessible, as for fixed layout, there is no one-size-fits-all solution.
