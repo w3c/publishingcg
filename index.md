@@ -16,16 +16,16 @@ json-ld: |
           "roleName": "Co-Chair",
           "member": [{
               "@type": "Person",
-              "name": "Mateus Teixeir",
-              "email": "mteixeira@wwnorton.com"
+              "name": "Wolfgang Schindler",
+              "email": "ws.schindler@googlemail.com"
           }]
       },{
           "@type": "OrganizationRole",
           "roleName": "Co-Chair",
           "member": [{
               "@type": "Person",
-              "name": "Zheng Xu",
-              "email": "zxu@wysebee.com"
+              "name": "Gautier Chomel",
+              "email": "gautier.chomel@edrlab.org"
           }]
       }],
       "contactPoint": {
