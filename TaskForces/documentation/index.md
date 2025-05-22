@@ -2,6 +2,7 @@
 title: Documentation Task Force
 date: 2025-01-30
 active: false
+layout: home
 ---
 
 The documentation Task force aims to write, publish and maintain documentation to help the community find helpful and practical information on EPUBs.

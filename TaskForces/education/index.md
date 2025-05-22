@@ -2,6 +2,7 @@
 title: Education Task Force
 date: 2025-01-30
 active: false
+layout: home
 ---
 
 The education Task force aims to discuss and incubate needs related to educational contents. 
