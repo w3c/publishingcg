@@ -2,16 +2,22 @@
 
 # Publishing Community Group
 
-## Introduction
-This is the home repository for work done by the [W3C Publishing Community Group](https://www.w3.org/community/publishingcg/) ([Github Page](https://w3c.github.io/publishingcg/)). The Publishing Community Group is the incubator community for [Publishing@W3C](https://www.w3.org/publishing/). The goal of the group is to propose, document, and prototype features broadly related to
+The Publishing Community Group is open to anyone. [W3C Membership](https://www.w3.org/community/about/faq/#is-w3c-membership-required-to-participate-in-a-community-or-business-group) is not required to join a Community Group. In order to [join the group](https://www.w3.org/community/publishingcg/join), you will need a [W3C account](https://www.w3.org/accounts/request). 
+
+The Publishing Community Group is the incubator community for [Publishing@W3C](https://www.w3.org/publishing/). 
+The goal of the group is to propose, document, and prototype features broadly related to
 
 - publications on the Web,
 - reading modes and systems,
 - the user experience of digital publications.
 
-These topics are general and the community errs on the side of inclusive discussions; specifics are kept to dedicated [issues](https://github.com/w3c/publishingcg/issues). See [Ways to Contribute](#ways-to-contribute) if you'd like to participate but are unsure how.
+## Webpages
 
-For incubation of Web Platform features, visit the [Web Platform Incubator Community Group (WICG)](https://www.w3.org/community/wicg/).
+* The [W3C Publishing Community Group](https://www.w3.org/community/publishingcg/) is an information page.
+* The [publishingcg Github Page](https://w3c.github.io/publishingcg/) is a ressources page with spaces for task force.
+* This [Github repo for publishing CG](https://github.com/w3c/publishingcg/) hosts the github pages sources and is the place for public discussions that we follow up into [issuess](https://github.com/w3c/publishingcg/issues). Please note we almost do not use the github discussions feature. 
+
+See [Ways to Contribute](#ways-to-contribute) if you'd like to participate but are unsure how.
 
 ## Meetings
 
