@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: home
+title: minutes
 ---
 
 # Meeting Minutes

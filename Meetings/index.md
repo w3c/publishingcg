@@ -1,4 +1,5 @@
 ---
+layout: home
 title: meetings
 layout: default
 ---
