@@ -1,6 +1,7 @@
 ---
+layout: home
 title: meetings
-layout: default
+layout: home
 ---
 
 Meetings are not recurent and happens when a subject to present or discuss appear. Proposals can be adressed directly to the chairs or shared on the mailing list. 
