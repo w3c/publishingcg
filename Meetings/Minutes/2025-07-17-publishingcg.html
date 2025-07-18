@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<title>(MEETING TITLE) &ndash; 17 July 2025</title>
+<meta name=viewport content="width=device-width">
+<link rel="stylesheet" type="text/css" title="2018" href="https://www.w3.org/StyleSheets/scribe2/public.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/StyleSheets/base.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/StyleSheets/public.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/2004/02/minutes-style.css">
+<link rel="alternate stylesheet" type="text/css" title="Fancy" href="https://www.w3.org/StyleSheets/scribe2/fancy.css">
+<link rel="alternate stylesheet" type="text/css" title="Typewriter" href="https://www.w3.org/StyleSheets/scribe2/tt-member.css">
+</head>
+
+<body>
+<header>
+<p><a href="https://www.w3.org/"><img src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt=W3C border=0 height=48 width=72></a></p>
+
+<h1>&ndash; DRAFT &ndash;<br>
+(MEETING TITLE)</h1>
+<h2>17 July 2025</h2>
+
+<nav id=links>
+<a href="https://www.w3.org/2025/07/17-publishingcg-irc"><img alt="IRC log." title="IRC log" src="https://www.w3.org/StyleSheets/scribe2/text-plain.png"></a>
+</nav>
+</header>
+
+<div id=prelims>
+<div id=attendees>
+<h2>Attendees</h2>
+<dl class=intro>
+<dt>Present</dt><dd>DanielWeck, gautierchomel, George, james, ori, vladimir, wolfgang</dd>
+<dt>Regrets</dt><dd>-</dd>
+<dt>Chair</dt><dd>-</dd>
+<dt>Scribe</dt><dd>wolfgang</dd>
+</dl>
+</div>
+
+<nav id=toc>
+<h2>Contents</h2>
+<ol>
+</ol>
+</nav>
+</div>
+
+<main id=meeting class=meeting>
+<h2>Meeting minutes</h2>
+<section><p id=305c class="phone s01"><cite>Gautier:</cite> part of a series with AI in RS<br>
+<span id=7805>… today Daniel Weck, lead developer of Thorium (reading system from EDRLab)</span></p>
+<p id=ffff class="phone s02"><cite>DanielWeck:</cite> AI-generated content descriptions in Thorium - unreleased experiment, thus work in progress - lays foundations for user experience  we want to follow - demo two page spread with image of Jules Verne with description - inspect the HTML<br>
+<span id=59eb>… image has empty @alt and empty title - lnik takes me to an appendix where the image is displayed - but here the @alt is not empty - it says &quot;linked image&quot;</span><br>
+<span id=c816>… would be great if we hade some help from AI - Thorium has a zoom feature - leads to room for textual description - can choose an LLM to generate description -</span><br>
+<span id=6128>… decide between &quot;short&quot; or &quot;extended&quot; description - I can edit the system prompt, but there is a default system prompt - Gemini very good at discovering ppl in images - extended description would have two paragraphs - advanced view of system prompt in JSON format - additional information in prompt in this format</span><br>
+<span id=64df>… select text fron answer - run a search on the Internet to get more information</span><br>
+<span id=10000>… new work from W3C WG - complex image (bar chart) - link to extended description - rich text that is not part of a short description - plan to create a modal interface where you might consult AI</span></p>
+<p id=10001 class=summary>(1) user see descriptions (2) chat with AI (3) do further research on the web - familiar chat UI - modal interlay - default system prompt which sets useful boundaries - we also feed in metadata<br>
+<span id=ec9e>… request short or extended descriptions easily - just &quot;one shot&quot; - we need to inform the user that an AI will hallucinate</span><br>
+<span id=e641>… MCP Model Context Protocol for tool calls out of scope - RAG also not implemented - beyond basic embedding - also not local LLMs - response times OK, but not the quality - Gemini better for image descriptions</span><br>
+<span id=9abb>… you may give metadata as embedded context for the prompt - advanced user may edit the systemprompt and might remove blatantly irrelevant metadata</span></p>
+<p id=1a90 class="phone s03"><cite>George:</cite> publishers are not happy with AI getting trained with their copyrighted materials. Any protections?</p>
+<p id=8514 class="phone s04"><cite>Daniel:</cite> All conversations in the chat with AI, are used for training if I don't pay for using the LLM - If I were to pay for the service, the data remain private -always depends on the terms and conditions of a particular model - for publishers TDM reservation protocol allows to opt in or out - Thorium would respect this<br>
+<span id=1b32>… , any ideas how that could be solved?</span></p>
+<p id=1372 class="phone s03"><cite>George:</cite> if image is not used for training, publishers are OK with that.</p>
+<p id=6781 class="phone s04"><cite>Daniel:</cite> Thorium would have to police the use of data by an LLM - Would Thorium have to blacklist some models?</p>
+<p id=da0b class="phone s05"><cite>James:</cite> Publishers are very twitchy about copyrighted material - with an epub you can mark the TDM or place a couple of metatags - 6 or 7 different ways to signal that training ist not accepted - training is an issue -<br>
+<span id=9d4a>… on-device LLMS would be helpful</span></p>
+<p id=c756 class="phone s04"><cite>Daniel:</cite> Publishers don't want RS to create friction - with images copies and text scanning, it's so easy to be done (e.g. on a Mac) - we have to send the image to the AI, but can't control what the LLM wil be doing with it</p>
+<p id=e01e class="phone s05"><cite>James:</cite> could a publisher embed a token ?</p>
+<p id=b7d7 class="phone s04"><cite>Daniel:</cite> agreement with Mistral - access token for EDRLab - could run on a Thorium server - but Thorium doesn't transport the key itself- but uses it in accessing the LLM to answer users' requests</p>
+<p id=10002 class="phone s06"><cite>Ori:</cite> if you using the user's API key, you can't know what the AI does with it - Gemini say they don't use it for training, no idea what OpenAI does - using another key is problematic<br>
+<span id=3b16>… Gemini doesn't feed requests for image descriptions to humans</span></p>
+<p id=b9e5 class="phone s04"><cite>Daniel:</cite> main stumbling block: potential of legal issues - we could enable it in nightly build, but not in production builds</p>
+<p id=08ef class="phone s03"><cite>George:</cite> JPEG has metadata in it - is that transmitted?</p>
+<p id=50cc class="phone s04"><cite>Daniel:</cite> in FB Messenger or Signal I check that GPS data is erased before I share pictures - with AI once the image payload is transmitted - it will be readable for AI</p>
+<p id=f141 class="phone s06"><cite>Ori:</cite> guess it will not ingest geographical data</p>
+<p id=462d class="phone s04"><cite>Daniel:</cite> most LLMs have restrictions - in Thorium we don't create requests for LLMs manually - we feed image data into an abstraction interface<br>
+<span id=c7b6>… abstraction layer is fully client-side - it allows us to speak Javascript -</span></p>
+<p id=2ae5 class="phone s06"><cite>Ori:</cite> had to reduce size of image - don't send EXIf or geographical data</p>
+<p id=4b98 class="phone s04"><cite>Daniel:</cite> images processed before sending them on the wire - reduction in size before sending</p>
+<p id=6f70 class="phone s01"><cite>gautier:</cite> WCAG criteria; description must offer same service as the image - a way to fulfil this - focus on authored description (if available) - real success for WCAG requirement</p>
+</section>
+</main>
+
+
+<address>Minutes manually created (not a transcript), formatted by <a
+href="https://w3c.github.io/scribe2/scribedoc.html"
+>scribe.perl</a> version 244 (Thu Feb 27 01:23:09 2025 UTC).</address>
+
+<div class=diagnostics>
+<h2>Diagnostics</h2>
+<p class=warning>No scribenick or scribe found. Guessed: wolfgang</p>
+<p class=warning>Maybe present: Daniel, Gautier</p>
+<p class=warning>All speakers: Daniel, DanielWeck, Gautier, George, James, Ori</p>
+<p class=warning>Active on IRC: DanielWeck, gautierchomel, George, wolfgang</p>
+</div>
+</body>
+</html>
