@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<title>W3C Publishing Community Group Plenary: &quot;Advanced Features in Colibrio Reader&quot; &ndash; 11 June 2025</title>
+<meta name=viewport content="width=device-width">
+<link rel="stylesheet" type="text/css" title="2018" href="https://www.w3.org/StyleSheets/scribe2/public.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/StyleSheets/base.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/StyleSheets/public.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/2004/02/minutes-style.css">
+<link rel="alternate stylesheet" type="text/css" title="Fancy" href="https://www.w3.org/StyleSheets/scribe2/fancy.css">
+<link rel="alternate stylesheet" type="text/css" title="Typewriter" href="https://www.w3.org/StyleSheets/scribe2/tt-member.css">
+</head>
+
+<body>
+<header>
+<p><a href="https://www.w3.org/"><img src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt=W3C border=0 height=48 width=72></a></p>
+
+<h1>&ndash; DRAFT &ndash;<br>
+W3C Publishing Community Group Plenary: &quot;Advanced Features in Colibrio Reader&quot;</h1>
+<h2>11 June 2025</h2>
+
+<nav id=links>
+<a href="https://www.w3.org/2025/06/11-publishingcg-irc"><img alt="IRC log." title="IRC log" src="https://www.w3.org/StyleSheets/scribe2/text-plain.png"></a>
+</nav>
+</header>
+
+<div id=prelims>
+<div id=attendees>
+<h2>Attendees</h2>
+<dl class=intro>
+<dt>Present</dt><dd>gautierchomel, jimsaya, jonas, Lars, wolfgang</dd>
+<dt>Regrets</dt><dd>-</dd>
+<dt>Chair</dt><dd>wolfgang</dd>
+<dt>Scribe</dt><dd>gautierchomel</dd>
+</dl>
+</div>
+
+<nav id=toc>
+<h2>Contents</h2>
+<ol>
+</ol>
+</nav>
+</div>
+
+<main id=meeting class=meeting>
+<h2>Meeting minutes</h2>
+<section><p id=0b5c class="phone s01"><cite>Lars:</cite> I have no formal presentation. I have been experimenting with AI in Colibrio since long time now. I am particulary interested in having conversation with a book. Because I am a fan of fictions.</p>
+<p id=ffff class="phone s01"><cite>Lars:</cite> I have beeen using openAI, experimenting with theyre API is easy, it runs in the browser and it is client side. Last year, they released an asistant API that takes care of the boring stuff.</p>
+<p id=29a2 class="phone s01"><cite>Lars:</cite> to use LLM we need tools, those are the APIs. Without tool, the LLM is a stupid huge base of knowledge. To be more precise we feed with very contextual information. You can give the context in a prompt. prompt engineering is about yourself being the tool. The more precise you are, the more accurate you get an answer. To go further in using LLMs we use context inputs from other databases. That's the role of the API.</p>
+<p id=c9f4 class="phone s01"><cite>Lars:</cite> adding context is costly and time consuming. It needs to be structured and expressed in a way understandable by the LLM. This complexity needs to be managed.</p>
+<p id=7fc3 class="phone s01"><cite>Lars:</cite> showing screen. This is the vanilla reader, available online. You need an openAI jey to make it work. It can be costly, when you work with images. Less when it is about text. At the opening of the book, i strip away unnecessary markup and keep only the HTML semantic. I clean to the bare minimum of code. That's pushed to the LLM as embedded. Think about it as a computer edition of the book. An edition made for computers. A</p>
+<p id=24fa class=summary>numerical representation of the book. It feeds a vector database. You can then ask question, queries, to the database.</p>
+<p id=d370 class="phone s01"><cite>Lars:</cite> A note, this embedded version, in my opinion, should be built and sold by the publisher.</p>
+<p id=45fa class="phone s01"><cite>Lars:</cite> Anyway that's an important part because this is the step allowing to get contextualised answers.</p>
+<p id=ded7 class="phone s01"><cite>Lars:</cite> next, I open the dialog, a chat box built in the app, and start to ask.</p>
+<p id=ce98 class="phone s01"><cite>Lars:</cite> the question goes to the vector database, which performs semantic search and provides chucks of 500 caracters to the LLM who is formulating the answers displayed to me.</p>
+<p id=69af class="phone s01"><cite>Lars:</cite> To make sure the responses are from the book, the app performs a search and provides link references for each part of the answer. So you can activate the link and go to the part of the book stating that.</p>
+<p id=a3c8 class="phone s01"><cite>Lars:</cite> the models are not smart, it is the context and the dispositive deployed by the App developers that make it usefull. As a consequence, the best quality of the book make the best answers. Metadata are important too, we exctract and use them to feed the database.</p>
+<p id=7b4c class="phone s01"><cite>Lars:</cite> Metadata, semantics, Table of content, all the ebook appareal is used here. It is our best chance to get good results.</p>
+<p id=60d7 class=irc><cite>&lt;wolfgang&gt;</cite> Gautier: publishers rely on AI systems - risks involved for customers</p>
+<p id=52aa class="phone s02"><cite>Gautier:</cite> there is a risk of loop. AI analysing data created by AI.</p>
+<p id=c461 class="phone s01"><cite>Lars:</cite> yes, that's a major problem actually, on every digital contents</p>
+<p id=d721 class="phone s02"><cite>Gautier:</cite> so probably it is of use to have a refine property to indicate that &quot;this metadata or content was AI produced&quot;.</p>
+<p id=1ea4 class="phone s01"><cite>Lars:</cite> For sure! So we could alert the user, give a proportion of risk.</p>
+<p id=4270 class="phone s01"><cite>Lars:</cite> the LLM hype is too much, but still, the results are good. Let see with images. Here I send Image + context, including visible content aside of the image (the visible range we call it) , and always in the context of the book thanks to the embedded version stored in a database. I get good result. Trying with a contemporary art photo and a world map with data represented on it. This is complex to achieve on the production pipeline.</p>
+<p id=65b2 class=summary>It is easier in the reading system because we have the complete numerical representation of the book stored in a database.</p>
+<p id=cf88 class="phone s03"><cite>jonas:</cite> what is included in the visible range?</p>
+<p id=8976 class="phone s01"><cite>Lars:</cite> text that is available on the visual page. It is risky to expand too much, it could interpolate topics from other parts of the book. We could experiment adding title structure per example.</p>
+<p id=a8c8 class="phone s04"><cite>wolfgang:</cite> I feel, for science content, the chapter level can be the context.</p>
+<p id=85ce class="phone s01"><cite>Lars:</cite> this is to experiment, there are many different books fortunately! The solution will differ largely depending on this diversity. The more granular you are in the information (semantic, metadata, structure) you give, the best result you'll get. A schema attribute would bring a strong help, per example. Be smart when you build your ebook, you'll get strong feedback.</p>
+<p id=9d71 class="phone s01"><cite>Lars:</cite> I am also adding semantic search and translation. All we add is meant for non visual readers, they have a stronger need.</p>
+<p id=8480 class="phone s01"><cite>Lars:</cite> it also works with local models so you are not obliged to send your content to feed the LLM. It is slower but it works.</p>
+<p id=e83c class="phone s03"><cite>jonas:</cite> what happens with copyrighted material?</p>
+<p id=7de0 class="phone s01"><cite>Lars:</cite> never use free services. I pay for openAI, the contract say they don't use my contents for training. That's why we just provide a way to give your API key, then you are responsible. I don't want to take that responsability.</p>
+<p id=de5f class="phone s01"><cite>Lars:</cite> also, publishers should build and sell rights on embedded version. Meaning licensing your content, but ready for machine usage.</p>
+<p id=1e86 class="phone s03"><cite>jonas:</cite> for libraries it's tricky, we usually don't own copyright.</p>
+<p id=aefa class="phone s01"><cite>Lars:</cite> you would need to buy two licences, one for public reading and one for machine usage.</p>
+<p id=19e1 class="phone s04"><cite>wolfgang:</cite> in fact all the knowledge used in your system comes from the book. The LLM is only a vehicule here.</p>
+<p id=227d class="phone s01"><cite>Lars:</cite> yes, the LLM is a conversonial interface, good at language, but we need to give them the knowledge by running other code aside.</p>
+<p id=f363 class="phone s01"><cite>Lars:</cite> and adding control checks to make the answer accurate and verifiable. That's part of the agrement with computers, we want to be able to check because they don't always tell the truth.</p>
+</section>
+</main>
+
+
+<address>Minutes manually created (not a transcript), formatted by <a
+href="https://w3c.github.io/scribe2/scribedoc.html"
+>scribe.perl</a> version 244 (Thu Feb 27 01:23:09 2025 UTC).</address>
+
+<div class=diagnostics>
+<h2>Diagnostics</h2>
+<p class=warning>Succeeded: s/LLm/LLM/</p>
+<p class=warning>Succeeded: s/by/buy/</p>
+<p class=warning>Maybe present: Gautier</p>
+<p class=warning>All speakers: Gautier, jonas, Lars, wolfgang</p>
+<p class=warning>Active on IRC: gautierchomel, wolfgang</p>
+</div>
+</body>
+</html>
