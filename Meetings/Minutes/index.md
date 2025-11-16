@@ -5,6 +5,7 @@ title: minutes
 
 # Meeting Minutes
 
+* [2025-11-05](2025-11-05-publishingcg.html) 
 * [2025-07-17](2025-07-17-publishingcg.html) 
 * [2025-06-11](2025-06-11-publishingcg.html)
 * [2025-05-15](2025-05-15-publishingcg.html) 
