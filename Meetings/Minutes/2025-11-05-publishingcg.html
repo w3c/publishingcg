@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<title>Publishing Community Group &ndash; 05 November 2025</title>
+<meta name=viewport content="width=device-width">
+<link rel="stylesheet" type="text/css" title="2018" href="https://www.w3.org/StyleSheets/scribe2/public.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/StyleSheets/base.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/StyleSheets/public.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/2004/02/minutes-style.css">
+<link rel="alternate stylesheet" type="text/css" title="Fancy" href="https://www.w3.org/StyleSheets/scribe2/fancy.css">
+<link rel="alternate stylesheet" type="text/css" title="Typewriter" href="https://www.w3.org/StyleSheets/scribe2/tt-member.css">
+</head>
+
+<body>
+<header>
+<p><a href="https://www.w3.org/"><img src="https://www.w3.org/assets/logos/w3c-2025/svg/w3c-white.svg" alt=W3C border=0 height=60 width=60></a></p>
+
+<h1>&ndash; DRAFT &ndash;<br>
+Publishing Community Group</h1>
+<h2>05 November 2025</h2>
+
+<nav id=links>
+<a href="https://www.w3.org/events/meetings/cbb7f340-6012-4a50-821b-560a3d8611b0/"><img alt="Agenda." title="Agenda" src="https://www.w3.org/StyleSheets/scribe2/chronometer.png"></a>
+<a href="https://www.w3.org/2025/11/05-publishingcg-irc"><img alt="IRC log." title="IRC log" src="https://www.w3.org/StyleSheets/scribe2/text-plain.png"></a>
+</nav>
+</header>
+
+<div id=prelims>
+<div id=attendees>
+<h2>Attendees</h2>
+<dl class=intro>
+<dt>Present</dt><dd>breno, gautierchomel, jamesyanchak, MilenaRisi, pedromilliet, wolfgang</dd>
+<dt>Regrets</dt><dd>-</dd>
+<dt>Chair</dt><dd>wolfgang</dd>
+<dt>Scribe</dt><dd>gautierchomel</dd>
+</dl>
+</div>
+
+<nav id=toc>
+<h2>Contents</h2>
+<ol>
+</ol>
+</nav>
+</div>
+
+<main id=meeting class=meeting>
+<h2>Meeting minutes</h2>
+<section><p id=fe32 class="phone s01"><cite>Breno:</cite> Thanks for the invitation, I have a presnetation to share.<br>
+<span id=1360>… NEES is a research group located in Maceios, Brazil.</span><br>
+<span id=cc52>… we work a lot in education equity and digital transformation, often with administration and in link with public policies.</span><br>
+<span id=1ae4>… Brazil's National Textbook Program (PNLD) is about 180k schools for which more than 10 publishers provide textbooks.</span><br>
+<span id=41a3>… The programme is managed by Ministry of education and FNDE (national fund for the developement of education. It is a very large program</span><br>
+<span id=aea8>… it provides free high quality education material.</span><br>
+<span id=51e9>… covers all stages of education</span><br>
+<span id=94f0>… recently it has been expanded to digital formats aligning with national policies on inclusive education.</span><br>
+<span id=8047>… digital books is a part, but there is also a need to deploy, meaning we need a reading system. That's the task of my group.</span><br>
+<span id=0b5c>… We develop the multiplateform reader and define format to be produced.</span><br>
+<span id=63a1>… we have publishers, pedagogical evaluators, technical anlysts, accessibility analysts</span><br>
+<span id=d4ee>… and ressource analysts all of that to approve ressources and make sure they are high quality and accessible.</span><br>
+<span id=5490>… that means both pedagogical and technical analysis and quality assurance.</span><br>
+<span id=0c05>… ebooks include multimedia.</span><br>
+<span id=8da7>… it's a complex sequential process to make a textbook first, usually produced as PDF, summmited for pedagogical aspects, then if accepted, it will be converted as digital and enhanced with multimedia. At the end, the digital version is completely different, we have to re assess the pedagogical aspects.</span></p>
+<p id=ffff class="phone s01"><cite>Breno:</cite> the digital version is the one that comes with full accessibility requirement, it has to be very well structured, standard compliant but also include accessibility for multimedia contents (video, audio, forms).<br>
+<span id=bdf8>… given the complexity of the publications, this phase is crucial. The price negociation phase comes after.</span><br>
+<span id=f001>… Then if an agrement is found, comes production and distribution.</span><br>
+<span id=7196>… Analysts already use the reading system, I mean the same as the one, that is used by students.</span><br>
+<span id=86fa>… So our reading system is both used to study and to assess quality of the ebook.</span><br>
+<span id=45f9>… This production process is long, we know it could be made simpler if a digital versin was developped previously to the printed version.</span><br>
+<span id=e587>… Once ebooks produced, then we need to deliver it to end users. We have connectivity issues in some parts of Brasil, including instable and bad connectivity. We have to deal with that scenario. Remeber that the ebooks include audio and video.</span><br>
+<span id=8a8f>… we also have the protection concerns and need to use DRM.</span><br>
+<span id=34d3>… We want to have more interactivity like being able to perform exercices in the textbook.</span><br>
+<span id=1610>… we built a e-textbooks taxonomy, published by edulearn in 2025. From digitized to intelligent passing by multimedia, interactive and immersive.</span><br>
+<span id=3e58>… That leads us to being interested in web publications</span><br>
+<span id=2f54>… the standard is not much updated, but we met EDRLab and understood how to use this format following up readium implementations.</span><br>
+<span id=ebd8>… As the tools are open source we've been able to create a viable implementation</span><br>
+<span id=5d31>… with the help of the readium developers.</span><br>
+<span id=6331>… we are working on tooll to ease publishers transition to this format to be able to fully use it along the described chain, from publishing to reading.</span><br>
+<span id=ebec>… so HTML5 is the creation format, we convert it today as EPUB but face restrictions on javascript and CSS3 which is not a burden anymore if we use Web Publication.</span><br>
+<span id=7503>… also to mention, before we were using our own format, we have moved to standards and wish to follow up).</span><br>
+<span id=1ea3>… The main move for us is to shift from OPF to JSON, then HTML files with no restrictions,  that's great.</span><br>
+<span id=b835>… Web publication also ease the partial download which is important in our context with connectivity issues.</span><br>
+<span id=7a53>… It brings the best of Web and EPUB together in our view, and Readium implementation eases the onboarding for our dev teams, and for publishers.</span></p>
+<p id=c42a class=irc><cite>&lt;gautierchomel_&gt;</cite> s/,and/and/</p>
+<p id=97d3 class="phone s01"><cite>Breno:</cite> our reader (LIP) is offline first and connected to a server that manages the publications,  the protection and well, serves on the go what is needed without extra.<br>
+<span id=3c9e>… as challenges, we see a difficulty related to consistent rendering bvbetween plateform, but it's much better as web publication lower the need of code injection on the reading system side.</span><br>
+<span id=7f66>… connectivity and distribution is partially solved, but we also think about P2P content centric delivery (ipfs.tech)</span><br>
+<span id=2dc7>… most of all, the move to web publication allows us to ease the creation of accesisble and interactive ebooks by publishers.</span><br>
+<span id=4075>… are there questions?</span></p>
+<p id=10000 class="phone s02"><cite>wolfgang:</cite> I am very happy to ear about a web publication manifest use case.  the web publication manifest is really about giving you the power of the web while maintaining a product separation as ebooks.<br>
+<span id=3f3b>… I think you are really getting the best of this format.</span></p>
+<p id=dc19 class="phone s03"><cite>pedroMilliet:</cite> Agree, it is about leveraging what digital can do the best for books! It's easier to understand if it's the same technologies of the web. We have less limits as content creators, more fun, more rich content for childrens.</p>
+<p id=4c77 class="phone s01"><cite>Breno:</cite> it's a journey for publishers of course, but thanks to the help of EDRLab we are confident.<br>
+<span id=2105>… we were able to prototype because the format is already readable with Thorium, an open source solution, we've been able to inject what we needed in the webview.</span><br>
+<span id=cf51>… It made the testing and prototyping easy.</span><br>
+<span id=d472>… The direction is to interfer the less possible with the content,</span><br>
+<span id=a66b>… on the reading systel side, and EDRLab really understood that.</span></p>
+<p id=06b3 class="phone s03"><cite>pedroMilliet:</cite> I want to emphasis that building accessible interactivity is a great challenge.</p>
+<p id=10001 class="phone s01"><cite>Breno:</cite> it's amazing what we can do on the web, we want to be able to do this in ebooks, not webapps. It's been a long time dream. It's hard and complex.<br>
+<span id=84cd>… An intersting example is the UNICEF publications, they are web based, to be readen online, embedd TTS and many things. We can install them as web apps. It is our goal to be able to achieve a similar experience but as ebooks, to ease disctribution, protection and make sure the reading experience is consistent so in a same reader.</span></p>
+<p id=3bca class="phone s02"><cite>wolfgang:</cite> with interactivity, digital publishing is going forward, it means escaping from the paper reproduction. It allows for immersion, fun and participation. I think it is made for not all ebooks, not all publishers. It is good to see ebooks toughts as digital objects.</p>
+<p id=d31b class="phone s01"><cite>Breno:</cite> ebooks allows to escape from the internet, we want no external content,  it's digital but in a package, not bringi,ng you to other places, you download and stay in the ebook, it's available for you. We ask publishers to think about pedagogy first and how to make it effective in digital. The format allows for this extension of the web experience.</p>
+<p id=39fe class="phone s03"><cite>pedroMilliet:</cite> this tools from UNICEF are wonderfull, they would be interested in making them as ebooks, packaged and readable offline.</p>
+<p id=8d2b class="phone s02"><cite>wolfgang:</cite> the offline reading is one of the main reason to devlop web publication, it's a container, a knowledge reservoir available anytime in any situation. It makes it possible to take some chapters, the ones we need. There are countries with connectivity issues, but also places like schools, and we need to think about catastrophe also, the connectivity can be lost quite easily.</p>
+<p id=4e2b class=summary>rssagent, draft minutes</p>
+</section>
+</main>
+
+
+<address>Minutes manually created (not a transcript), formatted by <a
+href="https://w3c.github.io/scribe2/scribedoc.html"
+>scribe.perl</a> version 248 (Mon Oct 27 20:04:16 2025 UTC).</address>
+
+<div class=diagnostics>
+<h2>Diagnostics</h2>
+<p class=warning>Failed: s/,and/and/</p>
+<p class=warning>Succeeded: s/and help ease/eases/</p>
+<p class=warning>Succeeded: s/pedfroMilliet/pedroMilliet/</p>
+<p class=warning>All speakers: Breno, pedroMilliet, wolfgang</p>
+<p class=warning>Active on IRC: gautierchomel_, wolfgang</p>
+</div>
+</body>
+</html>
