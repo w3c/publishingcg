@@ -322,7 +322,7 @@ footer a, footer a:visited, footer a:focus, footer a:hover {
 }
 
 
-@media screen and (min-width: 78rem) {
+@media screen and (min-width: 30rem) {
 	main {
 		flex-flow: 			row;
 		justify-content:	space-around;
