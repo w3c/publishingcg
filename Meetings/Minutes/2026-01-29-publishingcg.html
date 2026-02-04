@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<title>Publishing CG plenary:</title>
+<meta name=viewport content="width=device-width">
+<link rel="stylesheet" type="text/css" title="2018" href="https://www.w3.org/StyleSheets/scribe2/public.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/StyleSheets/base.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/StyleSheets/public.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/2004/02/minutes-style.css">
+<link rel="alternate stylesheet" type="text/css" title="Fancy" href="https://www.w3.org/StyleSheets/scribe2/fancy.css">
+<link rel="alternate stylesheet" type="text/css" title="Typewriter" href="https://www.w3.org/StyleSheets/scribe2/tt-member.css">
+</head>
+
+<body>
+<header>
+<p><a href="https://www.w3.org/"><img src="https://www.w3.org/assets/logos/w3c-2025/svg/w3c-white.svg" alt=W3C border=0 height=60 width=60></a></p>
+
+<h1>&ndash; Publishing CG plenary &ndash;<br>
+Exploring uses of Web Publications (WPUB)</h1>
+<h2>29 January 2026</h2>
+
+<nav id=links>
+<a href="https://www.w3.org/2026/01/29-publishingcg-irc"><img alt="IRC log." title="IRC log" src="https://www.w3.org/StyleSheets/scribe2/text-plain.png"></a>
+</nav>
+</header>
+
+<div id=prelims>
+<div id=attendees>
+<h2>Attendees</h2>
+<dl class=intro>
+<dt>Present</dt><dd>CharlesL, Hadrien, ivan, sueneu, Wolfgang Dale, Pedro, Vladimir, Christian, Kenneth, Ryan, Jim, SimonM, Carlos, Angel, Martin, Laurent</dd>
+<dt>Regrets</dt><dd>-</dd>
+<dt>Chair</dt><dd>Gautier</dd>
+<dt>Scribe</dt><dd>Wolfgang</dd>
+</dl>
+</div>
+
+<nav id=toc>
+<h2>Contents</h2>
+<ol>
+<li><a href="#4534">Web Publications (WPUB)</a></li>
+</ol>
+</nav>
+</div>
+
+<main id=meeting class=meeting>
+<h2>Meeting minutes</h2>
+<section></section>
+
+<section>
+<h3 id=4534>Web Publications (WPUB)</h3>
+<p id=480d class="phone s01"><cite>Gautier:</cite> we want to collect input from the industry concerning Web Publication format. Get information about its usage and its functionality.<br>
+<span id=63fb>… The Web Publications (WPUB) specification defines how to treat a collection of web resources as a single, coherent publication on the Web, with its own identity, reading order, and metadata. It builds on existing Open Web Platform technologies (HTML, URLs, web app manifest, service workers, etc.) instead of inventing a new file format.</span><br>
+<span id=aa1c>… In concrete terms, a Web Publication is:</span></p>
+<p id=ac4f class=summary>A set of one or more resources (HTML, audio, images, styles, scripts).<br>
+<span id=40b5>… Organized by a manifest that describes metadata, default reading order, and resource list.</span><br>
+<span id=1524>… Exposed through a primary entry page at a stable URL, which acts as the canonical identifier and human entry point.</span><br>
+<span id=d025>… Intended to be presentable as a bounded, book-like work (with navigation, table of contents, etc.) while remaining fully web-native.</span><br>
+<span id=1a5f>… This model was meant to support many kinds of publications on the Web: long-form articles, books, journals, corporate documents, educational material, audiobooks, and more.</span><br>
+<span id=5f44>… January 2018: First public Working Draft of Web Publications is published (WD‑wpub‑20180104), defining a Web Publication as a collection of resources with a manifest and default reading order.</span><br>
+<span id=0583>… August 2019: “Web Publications” and “Web Publications Use Cases and Requirements” are published as Working Group Notes, not Recommendations, reflecting that work did not progress further on the standards track.</span><br>
+<span id=906b>… Vincent Gros and Julietta Murata from Hachette have presented their ongoing work regarding the utilization of Web Publications as a pivot format for production. This session will detail the transformations involved, the identified advantages, and the specific work undertaken by Hachette in this area. They cannot be with us today but I'm adding</span></p>
+<p id=274e class=summary>to the minutes the link to the recording : <a href="https://www.edrlab.org/events/digital-publishing-summit-2025/#1742891648861-f7f314c9-6f67">https://<wbr>www.edrlab.org/<wbr>events/<wbr>digital-publishing-summit-2025/#1742891648861-f7f314c9-6f67</a></p>
+<p id=6aec class=irc><cite>&lt;ivan&gt;</cite> a/A set of/... A set of/</p>
+<p id=84f0 class="phone s02"><cite>Hadrien:</cite> Readium uses Readium WebPub Manifest almost as an internal format - has many benefits - EPUB is treated as a representation of this format - independent from the EPUB version used - you work directly with images or sound tracks - standardized canonical representations used for many years<br>
+<span id=e99f>… also authoring format - in education ppl struggle with EPUB - RS often block Javascript - and a lot of assumptions (pagination) - interest in education - WPUB as core format because it's better suited to their needs</span></p>
+<p id=ab1c class="phone s03"><cite>Dale:</cite> could you provide a link to an actual example in the wild - would like to see it myself</p>
+<p id=9df1 class=irc><cite>&lt;gautierchomel_&gt;</cite> <a href="https://www.w3.org/TR/wpub/">https://<wbr>www.w3.org/<wbr>TR/<wbr>wpub/</a></p>
+<p id=2662 class=irc><cite>&lt;gautierchomel_&gt;</cite> <a href="https://www.w3.org/TR/pwp-ucr/">https://<wbr>www.w3.org/<wbr>TR/<wbr>pwp-ucr/</a></p>
+<p id=f3ce class=irc><cite>&lt;gautierchomel_&gt;</cite> <a href="https://w3c.github.io/pwpub/">https://<wbr>w3c.github.io/<wbr>pwpub/</a></p>
+<p id=eae1 class=summary>Three links to the documents</p>
+<p id=e3dd class="phone s02"><cite>Hadrien:</cite> for mobile, it's used behind the scene - in terms of WebReaders - have a look at the Readium playground - developments behind doors of companies</p>
+<p id=b81d class=irc><cite>&lt;ivan&gt;</cite> <a href="https://www.w3.org/TR/pub-manifest/">https://<wbr>www.w3.org/<wbr>TR/<wbr>pub-manifest/</a></p>
+<p id=eed0 class="phone s01"><cite>Gautier:</cite> conversion of an EPUB to WPUB for Thorium Reader - we should reference some example</p>
+<p id=f438 class="phone s04"><cite>ivan:</cite> originally the idea was to have publications on the web - books, articles - idea came up in 2025 - no major publisher was interested - mistake: no survey with publishers about business case - it ended up as a note<br>
+<span id=7172>… publication manifest is a rec though - used in audiobooks - major pushback from browser developers - never picked it up</span><br>
+<span id=db25>… the current samples (Gautier, Hadrien) are absolutely viable - useful tool for internal work (Hadrien) and at Hachette also uses it as internal tool in their work with authors</span><br>
+<span id=0815>… we might have been 10 years too early- Publication Manifest and Readium WPUB Manifest are close, but not interoperable or identical</span></p>
+<p id=3543 class="phone s01"><cite>Gautier:</cite> I have seen audiobooks using that manifest</p>
+<p id=acb6 class="phone s01"><cite>Gautier:</cite> looking for further use cases</p>
+<p id=81fa class=irc><cite>&lt;Hadrien&gt;</cite> <a href="https://playground.readium.org">https://<wbr>playground.readium.org</a></p>
+<p id=0da1 class=irc><cite>&lt;Hadrien&gt;</cite> Example of a manifest generated on the fly from an EPUB: <a href="https://publication-server.readium.org/webpub/Z3M6Ly9yZWFkaXVtLXBsYXlncm91bmQtZmlsZXMvZGVtby9tb2J5LWRpY2suZXB1Yg/manifest.json">https://<wbr>publication-server.readium.org/<wbr>webpub/<wbr>Z3M6Ly9yZWFkaXVtLXBsYXlncm91bmQtZmlsZXMvZGVtby9tb2J5LWRpY2suZXB1Yg/<wbr>manifest.json</a></p>
+<p id=e7a0 class=irc><cite>&lt;Hadrien&gt;</cite> Example of a native manifest (not generated from EPUB on the fly): <a href="https://readium.org/css/docs/manifest.json">https://<wbr>readium.org/<wbr>css/<wbr>docs/<wbr>manifest.json</a></p>
+<p id=c47a class="phone s05"><cite>Pedro:</cite> worked with HTML books - in EPUB 3 - in 2019 we started a new way due to issues with EPUB - HTML5 packages - whole structure in HTML 5 with digital objects - infographics, complex interactive features - today packaged as EPUBs<br>
+<span id=7329>… created LPF books to be consumed in Thorium - we will definitely go for web publications -</span></p>
+<p id=bcb9 class="phone s06"><cite>Hadrein:</cite> US/UK bookshop.org - if you read online, Readium Web Publication Manifest will be used - used to power audiobooks in Quebec, Spain, Finland - Netgalley (US, UK, Australia, Germany, France, Japan) also use this manifest</p>
+<p id=4f64 class="phone s04"><cite>ivan:</cite> the packaging problem was a problem - strong push for a more webby packaging format - we thought that would be a good solution - interest dwindled - but this problem still exists</p>
+<p id=43fc class="phone s01"><cite>gautier:</cite> sb who does not want to use this format</p>
+<p id=84b2 class="phone s02"><cite>Hadrien:</cite> B2C format for audiobooks and libraries</p>
+<p id=3296 class="phone s02"><cite>Hadrien:</cite> PDFs based on XML catalogues - limitations in its model - single collection with items - working on PDF 2.0, we decided to use the web publication manifest - project in Brazil mentioned - useful for teachers and students to browse available materials - Finland: national library - everything in PDF except for audiobooks</p>
+<p id=14ad class=irc><cite>&lt;ivan&gt;</cite> The first reference to the concepts: <a href="https://www.w3.org/TR/pwp/">https://<wbr>www.w3.org/<wbr>TR/<wbr>pwp/</a></p>
+<p id=6f1a class="phone s01"><cite>Gautier:</cite> presented to each user in Readium - Readium CLI allows to export your manifest from EPUB - is there a will to use it outside Readium ecosystem</p>
+<p id=5ae8 class="phone s02"><cite>Hadrien:</cite> end user format: esp. for audiobooks and comics - South Korea doens't want to use EPUB - for education it supports interactivity - Readium has an implementation and tools - authoring: Brazil, Unicef, South Korea, Hachette as users - interchange format: depends on available tools</p>
+<p id=fccf class="phone s01"><cite>Gautier:</cite> we could make a survey, report on the Readium ecosyystem</p>
+<p id=7f94 class="phone s02"><cite>Hadrien:</cite> W3C version seen as a internal format, mostly for audiobooks - referred to by NISO - stepping on EPUB toes for education</p>
+<p id=5e40 class="phone s01"><cite>Gautier:</cite> after the adoption of EPUB, the publishing industry may shy from a further format</p>
+<p id=e17b class="phone s04"><cite>ivan:</cite> traditional publsihing has no reason not to use EPUB - scholarly publishing (journals, reports) have not really adopted EPUB - almost all have moved to HTML. e.g. conference proceedings (ACM) - Webpub manifest is a tool for joint metadata -</p>
+<p id=6dad class="phone s01"><cite>gautier:</cite> as a user i should be able to collect a bunch of stuff - packaging format ist very relevant</p>
+<p id=2bf2 class="phone s04"><cite>ivan:</cite> collection should be downloaded into a web browser - readable offline using web workers</p>
+<p id=6f91 class="phone s01"><cite>Gautier:</cite> often collection of articles only as PDFs - you get stuck - any further aspects?</p>
+<p id=b56c class="phone s03"><cite>dale:</cite> notion of packaging - EPUB as a ZIP container, downloaded to a local device, consumption is local - WebPublications - the content is on a server, but downloadable - packaged on the server?</p>
+<p id=4b76 class="phone s02"><cite>Hadrien:</cite> Readium - javascript app - loading contents from the web - stream audio resources or comics OR download as a ZIP to a location - default: streaming, but you may download a zip - ppl often complain about ZIP, but it works for different formats - better not to reinvent the wheel</p>
+<p id=8032 class="phone s05"><cite>Pedro:</cite> possibility of downloading a specific content for a student- collect a structured collection of previously selected content to produce a package on the fly - interactive textbooks - able to offer individual selection of content for each student - still a project</p>
+<p id=ad86 class=irc><cite>&lt;Hadrien&gt;</cite> Yes, Service Workers allow caching indeed, you can do it over the entire publication or parts of it.</p>
+<p id=581e class="phone s04"><cite>ivan:</cite> intermediate approach: usage of WebWorkers to download content and read it in the browser saved locally - read web content offline -</p>
+<p id=1a8c class=irc><cite>&lt;Hadrien&gt;</cite> Same thing is possible in a native app, you can download individual resources to cache them temporarily or use them offline.</p>
+<p id=314a class=irc><cite>&lt;Hadrien&gt;</cite> A Service Worker acts like a proxy, so you can replicate the same concept natively.</p>
+<p id=aba5 class="phone s04"><cite>ivan:</cite> Web has no concept of a collection of web pages - a web publication manifest allows to handle collections with metadata attached - main function of webpub</p>
+<p id=ed82 class="phone s03"><cite>Dale:</cite> use case for education - many rural students, no good internet connection, electronic version could be downloaded - publishers wanted to keep them on the server - EPUB was great - ability to create a local archive of content from the Web<br>
+<span id=5637>… sounds a great idea!</span></p>
+<p id=aded class="phone s01"><cite>Gautier:</cite> we should discuss more with the Web community</p>
+<p id=bdfd class="phone s04"><cite>ivan:</cite> browser vendors didn't see any business case - referred to simply using HTML</p>
+<p id=318f class="phone s02"><cite>Hadrien:</cite> browsers provide the building blocks</p>
+<p id=43fe class="phone s01"><cite>Gautier:</cite> there's more attention now - it might be a reason to reconsider to bring more book content to the Web -<br>
+<span id=a30c>… rrsagent, draft minutes</span></p>
+</section>
+</main>
+
+
+<address>Minutes manually created (not a transcript), formatted by <a
+href="https://w3c.github.io/scribe2/scribedoc.html"
+>scribe.perl</a> version 248 (Mon Oct 27 20:04:16 2025 UTC).</address>
+
+<div class=diagnostics>
+<h2>Diagnostics</h2>
+<p class=warning>Succeeded: s/Organized/... Organized/</p>
+<p class=warning>Succeeded: s/Exposed/... Exposed/</p>
+<p class=warning>Succeeded: s/Intended/... Intended/</p>
+<p class=warning>Succeeded: s/the current/... the current/</p>
+<p class=warning>Succeeded: s/readbale/readable</p>
+<p class=warning>Maybe present: Dale, Gautier, Hadrein, Pedro</p>
+<p class=warning>All speakers: Dale, Gautier, Hadrein, Hadrien, ivan, Pedro</p>
+<p class=warning>Active on IRC: CharlesL, Dale, gautierchomel_, Hadrien, ivan, sueneu, wolfgang</p>
+</div>
+</body>
+</html>
