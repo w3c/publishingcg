@@ -1,3 +1,8 @@
+---
+layout: document
+---
+
+
 # Web Publications: 2026 state of usages
 
 In january 2026 the publishing community held a plenary session to collect information about the use and potentials of the web publication format. This was the occasion to build this state of usages document. 

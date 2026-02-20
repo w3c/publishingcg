@@ -1,5 +1,6 @@
 ---
 Title: Parallel Content
+layout: document
 Author: Gautier Chomel
 date: 02/06/2026
 ---

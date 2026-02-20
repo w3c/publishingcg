@@ -1,3 +1,7 @@
+---
+layout: document
+---
+
 % Publishing CG Telco — 2020-10-21
 
 ![W3C Logo](https://www.w3.org/Icons/w3c_home)

@@ -1,6 +1,7 @@
 ---
 title: Documentation ressources for EPUB
 date: 2025-01-30
+layout: document
 ---
 
 ## third party documentations

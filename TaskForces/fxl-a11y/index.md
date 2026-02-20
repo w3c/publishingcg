@@ -1,6 +1,7 @@
 ---
 title: Fixed Layout Accessibility Taskforce folder
 date: 2025-01-30
+layout: document
 ---
 
 The fixed layout accessibility taskforce incubated in the Publishing CG and is now a joint work of the Publishing CG and Maintenance WG. 
