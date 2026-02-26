@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<title>Publishing community group plenary -  parallel content in EPUB &ndash; 26 February 2026</title>
+<meta name=viewport content="width=device-width">
+<link rel="stylesheet" type="text/css" title="2018" href="https://www.w3.org/StyleSheets/scribe2/public.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/StyleSheets/base.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/StyleSheets/public.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/2004/02/minutes-style.css">
+<link rel="alternate stylesheet" type="text/css" title="Fancy" href="https://www.w3.org/StyleSheets/scribe2/fancy.css">
+<link rel="alternate stylesheet" type="text/css" title="Typewriter" href="https://www.w3.org/StyleSheets/scribe2/tt-member.css">
+</head>
+
+<body>
+<header>
+<p><a href="https://www.w3.org/"><img src="https://www.w3.org/assets/logos/w3c-2025/svg/w3c-white.svg" alt=W3C border=0 height=60 width=60></a></p>
+
+<h1>&ndash; DRAFT &ndash;<br>
+Publishing community group plenary -  parallel content in EPUB</h1>
+<h2>26 February 2026</h2>
+
+<nav id=links>
+<a href="https://www.w3.org/2026/02/26-publishingcg-irc"><img alt="IRC log." title="IRC log" src="https://www.w3.org/StyleSheets/scribe2/text-plain.png"></a>
+</nav>
+</header>
+
+<div id=prelims>
+<div id=attendees>
+<h2>Attendees</h2>
+<dl class=intro>
+<dt>Present</dt><dd>:, DaleRogers, GeorgeK, gregoriopellegrino, hadrien, jonathan, LaurentLM, manfred, rdeltour, Simon_M, sueneu, wolfgang</dd>
+<dt>Regrets</dt><dd>-</dd>
+<dt>Chair</dt><dd>wolfgang</dd>
+<dt>Scribe</dt><dd>gautierchomel_, Gautier</dd>
+</dl>
+</div>
+
+<nav id=toc>
+<h2>Contents</h2>
+<ol>
+</ol>
+</nav>
+</div>
+
+<main id=meeting class=meeting>
+<h2>Meeting minutes</h2>
+<section>
+<p id=2c00 class=phone><cite> wolfgang</cite>: parallel reading happens in many books.</p>
+<p id=32fc class=phone><cite> wolfgang</cite>: let think about ancient greek and german on two facing pages.</p>
+<p id=233d class=phone><cite> DaleRogers</cite>: i authored poetry comic ebooks, first pages are a poem and it's comic interpretation in front. Those are different mediums, I don't know how to compare them.  I am not sure they can be parallelised.</p>
+<p id=625a class=phone><cite> GeorgeK</cite>: in early days of epub we had multiple rendition, it was not implemented, too complex. It provided the mecanisme let say to ahe a fixed layout and a braille version. Having a parallel reflowable to a fixed layout, that would help for accessibility of children books.  There is desire to have different experiences of a same content.</p>
+<p id=36f2 class=phone><cite> Hadrien</cite>: I don't like the word parallel, it confuses with media overlays.  In multiple rendition work there was a concept of mapping. I think this is what we are talking about here. The example we can test is newspapers and magazins, several newspaper apps opens on a fixed layout view and by entering an article we get it reflowable. That's a mapping in my opinion. They are complementary but differents.</p>
+<p id=8184 class=phone><cite> wolfgang</cite>: two perspectives on the same content, latin and english, you need to see both together. It's not an alternative, it's meant to be equivalent as far a s translation can go.</p>
+<p id=63d9 class=phone><cite> Hadrien</cite>: I think it is the same problem, for translations or formats, it's a mapping sentence to sentence. The UX and option to display them as parallels or switch between is possible by mapping.</p>
+<p id=5de9 class=phone><cite> wolfgang</cite>: I think we need a fine granualrity, not only at article level.</p>
+<p id=a1a3 class=phone><cite> Hadrien</cite>: agree, the article is an example only, enven in this case you can have different granularity.</p>
+<p id=ffff class=phone><cite> manfred</cite>: I am from SBS swiss library for the blind, we have two use cases, we produce books with media overlay heavy used by dyslexic people. Other usecase is that we use the new ebraille standard and want to combine it with multiple rendition so one can switch from dynamic braille to tts, all in an epub file. The daisy pipeline allows us to produce those files, not in production yet but soon.</p>
+<p id=3642 class=phone><cite> DaleRogers</cite>: different people have different needs, it is great to be able to adress those diferent needs. but comic has several layers of meaning, to get a computer to parse that is overwelming. But I can authorize that history in a different format, as an adaptation.</p>
+<p id=f3bc class=phone><cite> GeorgeK</cite>: bookshare has the search per format epub, audio, daisy, converted on the fly for the user need. Computers are already doing this. Back to ebraille, it's difficult to convert text to braille, we get better quality with preconverted braille where you can spot errors at the production step.That's why we want to be able to pack it with text and other formats.</p>
+<p id=728b class=phone><cite> Hadrien</cite>: the expectation of media overlay is to be consumed together, but ebraille and text is different, it's a switch, not a combined consuming.</p>
+<p id=b355 class=phone><cite> manfred</cite>: even in braille you could read with finger and ears at the same time. There are complexities with screen readers, but yes, the use case is both switch or consume at the same time.</p>
+<p id=a6ca class=phone><cite> manfred</cite>: ebraille and contracted braille back converted to text is also tricky. It is much better to keep both separate.</p>
+<p id=cbac class=phone><cite> manfred</cite>: multiple rendition with rendition mapping will be more effective than smile and media overlay but lacks supports, that's why we speak with reading system developpers.</p>
+<p id=c2e0 class=phone><cite> wolfgang</cite>: where that mapping would seat?</p>
+<p id=e8f6 class=phone><cite> Hadrien</cite>: I was part of the multiple rendition group. I can explain, it is mapped at container.xml level. But this mapping could also be done at a lower level, to level down the difficulty.</p>
+<p id=bedf class=phone><cite> hadrien</cite>: the mapping could be html, xml, json, i don't see technical difficulty.</p>
+<p id=63d5 class=phone><cite> Hadrien</cite>: an option is to build on multiple rendition, it exist, we only need implemntations.</p>
+<p id=ed60 class=phone><cite> GeorgeK</cite>: we miss the two implementations to get this a standard.</p>
+<p id=31cd class=phone><cite> DaleRogers</cite>: embedding two version in one only file, could make a big file, If I have images and audio. Is that something we should consider?</p>
+<p id=5ecc class=phone><cite> Hadrien</cite>: i don't think size is an issue.</p>
+<p id=9505 class=phone><cite> Hadrien</cite>: The problem with multiple rendition,  is that it force authors to have multiple opf, like 5 epubs in an epub. That could be simplified, it is not a different book, it is another manifestation of the same content.</p>
+<p id=3c17 class=phone><cite> Hadrien</cite>: textbooks are also a good example. Reading on a mobile when the unit is a spread fixed, it's a problem.</p>
+<p id=6162 class=phone><cite> GeorgeK</cite>: Canada as two official languages, there are also all over the world need for ways to have two languages side by side. Thta's a valid commercial usecase.</p>
+<p id=d123 class=phone><cite> wolfgang</cite>: agree, and more specificaly in education, native language compared to so many contents in english</p>
+<p id=8c27 class=phone><cite> sueneu</cite>: I know AI has become better at translation, will reading systems be able to translate on the fly?</p>
+<p id=ab11 class=phone><cite> gautierchomel_</cite>: we see there are many use cases, people are already doing this in different industries, educational and newspape. So what's the way to go forward ? This is not about incubation in my feeling, this is about interoperable implementation.</p>
+<p id=3c0c class=phone><cite> DaleRogers</cite>: I have questions about UX and how to author that.</p>
+<p id=6b1d class=phone><cite> Hadrien</cite>: that's a reading system burden. I see different affordance, at the opening of the book or at any time of the reading, buttons, menus, split views are valid affordances. It's up to reading systems,</p>
+<p id=a1c4 class=phone><cite> Hadrien</cite>: to make this work we need to agree on how to do it before implementation. Either we have something we can use in the spec or what's in the spec is not enought.</p>
+<p id=c13b class=phone><cite> wolfgang</cite>: we need colleagues to offer an example implementation to answer the question about is the spec enough.</p>
+<p id=142c class=phone><cite> Hadrien</cite>: multiple rendition has not made people happy. We may want to have a lighter thing. We need different spines and ways to categorise and identify them and then we need mapping. This is possible in multiple rendition but many other things are allowed by this spec.</p>
+<p id=1441 class=phone><cite> LaurentLM</cite>: mulitple rendition has been tried and stayed as a prototype. I would be interested to know why, what were the oppsoitions? With such a list we may remove every pain points and add the missing to end with something workable. We have problem with multiple metadatas, ambiguities, and also a problem with mapping. In media overlay smile was choosen, it's XML, but we dobn't even use the full smile. Maybe we should discuss the</p>
+<p id=45d1 class=phone><cite> language for mapping, maybe json instead of xml. but first we need to know why it was not implemented.</p>
+<p id=94be class=phone><cite> Hadrien</cite>: I still think it is better to have different spine and only one opf.</p>
+<p id=7eb6 class=phone><cite> wolfgang</cite>: it would be good to have all the use cases listed also. with requirement, so we can move forward and have the work followed up.</p>
+</section>
+</main>
+
+
+<address>Minutes manually created (not a transcript), formatted by <a
+href="https://w3c.github.io/scribe2/scribedoc.html"
+>scribe.perl</a> version 248 (Mon Oct 27 20:04:16 2025 UTC).</address>
+
+<div class=diagnostics>
+<h2>Diagnostics</h2>
+<p class=warning>Active on IRC: DaleRogers, gautierchomel_, GeorgeK, Hadrien, LaurentLM, rdeltour, Simon_M, sueneu, wolfgang</p>
+</div>
+</body>
+</html>
