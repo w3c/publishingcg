@@ -181,6 +181,11 @@ main > * {
 	padding-left:	0;
 }
 
+main > section {
+	width: 100%;
+	min-width: 0;
+}
+
 /* --- */
 main nav {
 	font-size: 		0.9em;
