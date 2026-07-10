@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<title>Publishing Community Group &ndash; 09 July 2026</title>
+<meta name=viewport content="width=device-width">
+<link rel="stylesheet" type="text/css" title="2018" href="https://www.w3.org/StyleSheets/scribe2/public.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/StyleSheets/base.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/StyleSheets/public.css">
+<link rel="alternate stylesheet" type="text/css" title="2004" href="https://www.w3.org/2004/02/minutes-style.css">
+<link rel="alternate stylesheet" type="text/css" title="Fancy" href="https://www.w3.org/StyleSheets/scribe2/fancy.css">
+<link rel="alternate stylesheet" type="text/css" title="Typewriter" href="https://www.w3.org/StyleSheets/scribe2/tt-member.css">
+</head>
+
+<body>
+<header>
+<p><a href="https://www.w3.org/"><img src="https://www.w3.org/assets/logos/w3c-2025/svg/w3c-white.svg" alt=W3C border=0 height=60 width=60></a></p>
+
+<h1>Language tagging - Publishing Community Group plenary</h1>
+<h2>09 July 2026</h2>
+
+<nav id=links>
+<a href="https://w3c-cg.github.io/publishingcg/Meetings/Agenda/"><img alt="Agenda." title="Agenda" src="https://www.w3.org/StyleSheets/scribe2/chronometer.png"></a>
+<a href="https://www.w3.org/2026/07/09-publishingcg-irc"><img alt="IRC log." title="IRC log" src="https://www.w3.org/StyleSheets/scribe2/text-plain.png"></a>
+</nav>
+</header>
+
+<div id=prelims>
+<div id=attendees>
+<h2>Attendees</h2>
+<dl class=intro>
+<dt>Present</dt><dd>AvneeshSingh, Bill_Kasdorf, DaleRogers, GeorgeK, gpellegrino, jgriggs_prh, JimS, JonasL, mgarrish, paoloC, paoloP, sueneu, vincentL</dd>
+<dt>Regrets</dt><dd>-</dd>
+<dt>Chair</dt><dd>wolfgang</dd>
+<dt>Scribe</dt><dd>gautierchomel</dd>
+</dl>
+</div>
+
+<nav id=toc>
+<h2>Contents</h2>
+<ol>
+</ol>
+</nav>
+</div>
+
+<main id=meeting class=meeting>
+<h2>Meeting minutes</h2>
+<section><p id=fdc6 class=irc><cite>&lt;AvneeshSingh&gt;</cite> <a href="https://github.com/daisy/transitiontoepub/wiki/Discussion-Paper:-Language-Switching-in-Digital-Publications">https://<wbr>github.com/<wbr>daisy/<wbr>transitiontoepub/<wbr>wiki/<wbr>Discussion-Paper:-Language-Switching-in-Digital-Publications</a></p>
+<p id=853e class="phone s01"><cite>wolfgang:</cite> today we are speaking about language tagging. The accessibility task force have prepared a document and we hope to have some feedback.</p>
+<p id=a4e9 class="phone s02"><cite>GeorgeK:</cite> in epubtest.org under non visual reading we have a test for switching languages, it's simple, just test a span in a paragraphe, once in french, german, spanish and english. The goal is to see if the screen reader changes the voice. NVDA allows to set an option for switching or not, there is also an opion for switching to regional variations like french from canda, etc.We don't check from dialects, only main languages.</p>
+<p id=cffe class="phone s03"><cite>AvneeshSingh:</cite> that triggered us to work on best practices, and realised this is a complex space, we need discusions before writing best practices. This is the goal of this discussion paper. What behavior do we expect from assistive technologies (AT), what powers should the user have (settings), what is doable with authoring tools we have today? How many words should be triggering a specific language tagging? How do we deal with minor or</p>
+<p id=7c86 class=summary> old languages that have no tts voices?</p>
+<p id=1e3d class="phone s03"><cite>AvneeshSingh:</cite> aside from the document the persons involved have raised some issues, we raised questions, we want your insights.</p>
+<p id=7c8c class="phone s04"><cite>gpellegrino:</cite> working with publishers we see there are many regulations refering to wcag. We've been tackling the images alt texts for years; Now we see that language tagging is the raising burden.</p>
+<p id=c6b8 class=irc><cite>&lt;AvneeshSingh&gt;</cite> questions: <a href="https://github.com/daisy/transitiontoepub/wiki/Discussion-Paper:-Language-Switching-in-Digital-Publications#9-questions-for-community-feedback">https://<wbr>github.com/<wbr>daisy/<wbr>transitiontoepub/<wbr>wiki/<wbr>Discussion-Paper:-Language-Switching-in-Digital-Publications#9-questions-for-community-feedback</a></p>
+<p id=5f23 class="phone s04"><cite>gpellegrino:</cite> how much is it important for end user? Because yes it is a burden.</p>
+<p id=ffff class="phone s05"><cite>PaoloCasrini:</cite> i believe language tagging is important feature, it improves the semantic quality and enable AT. But also, I don't think that it is a real blocker for AT users. Incorect language tagging reduce the experience but in many cases in does not prevent usage of the book. As publishers, it is a big burden to produce at this moment, so we need to be able to wisely determine which are blocking and need to be done from which would enhance the experience but are not blocking.<br>
+<span id=d2c3>… without guidance we risk to claim disproportionate burden.</span></p>
+<p id=b84b class="phone s06"><cite>Bill_Kasdorf6:</cite> as a consultant I see diverse books, medical scientific, etc. Good news, I see more and more ebooks that have language tagging.  Many ebooks already have italised sentences in other languages, that makes them easy to identify. Also, AI is changing the game, if it is not used by publishers it is used by producers.</p>
+<p id=2bc2 class="phone s02"><cite>GeorgeK:</cite> because of the growing popularity of read aloud, it's not just about AT, it's also a topic for readinng systems now (RS)</p>
+<p id=10000 class="phone s04"><cite>gpellegrino:</cite> on AI, it helps, but need a lot of attention, we've seen hallucinations between latin and italian, and on smaller languages.</p>
+<p id=adc4 class="phone s07"><cite>mgarrish:</cite> i agree that a book with not all languages tagged may not be inaccessible, that's part of the wcag, the rule let place for human interpretation.  It's difficult to state what is accessible and what is not. Not everything is gonna be perfect.</p>
+<p id=10001 class="phone s08"><cite>sueneu:</cite> it makes me think about the concept of gracefull degradation. We don't know how to pronounce ancient greek. We should not be too strict and let space for this gracefulll degradation.</p>
+<p id=4bbd class="phone s09"><cite>DaleRogers:</cite> that challenges how we see conformance.</p>
+
+<p id=bc60 class=irc><cite>&lt;AvneeshSingh&gt;</cite> <a href="https://github.com/daisy/transitiontoepub/wiki/Discussion-Paper:-Language-Switching-in-Digital-Publications#9-questions-for-community-feedback">https://<wbr>github.com/<wbr>daisy/<wbr>transitiontoepub/<wbr>wiki/<wbr>Discussion-Paper:-Language-Switching-in-Digital-Publications#9-questions-for-community-feedback</a></p>
+<p id=5c6a class="phone s10"><cite>gautierchomel:</cite> maybe we can take one or two questions of the document and adress them as topics.</p>
+<p id=53db class=irc><cite>&lt;sueneu&gt;</cite> +1 @gautierchomel suggestion of round tables for each issue</p>
+<p id=7772 class="phone s11"><cite>PaoloPancaldi:</cite> I am a developper, I spent many hours for tagging and it is complex, expensive in time. Whatever technology used, it require revision. It's usefull, but we need a more detailled guidance on to which point we should perform.</p>
+<p id=8720 class="phone s02"><cite>GeorgeK:</cite> my personal opinion is that unless it is a langugae training book, I don't think the absence of language tagging will make it inaccessible. When I turn on language switching in NVDa and read emails from Avneesh and Richard the voice changes to english from India and English from Britain, I prefer not to have this difference. But with a language learning book, yes I want to have a voice shift.</p>
+<p id=231f class=irc><cite>&lt;AvneeshSingh&gt;</cite> <a href="https://github.com/daisy/transitiontoepub/issues/100">daisy/<wbr>transitiontoepub#100</a></p>
+<p id=3248 class="phone s03"><cite>AvneeshSingh:</cite> which question should we take?</p>
+<p id=8d2c class="phone s06"><cite>Bill_Kasdorf6:</cite> my publisher clients are trying to tagg as many things as possible, evene if it says &quot;voila&quot; in an english book, most will want it prounounced correctly. Publishers are involved in quality.</p>
+<p id=b63b class="phone s01"><cite>wolfgang:</cite> I see that too, in German, we want the correct pronounciation, like the correct spelling.</p>
+<p id=6c1e class="phone s10"><cite>gautierchomel:</cite> trying with 9.6.1. What should be considered a &quot;part&quot; for language-switching purposes?</p>
+<p id=0a45 class=summary>to me it's an editorial decision, it depend on the book, collection, publisher.</p>
+<p id=10002 class="phone s04"><cite>gpellegrino:</cite> for us it is 5 words, if it is the same alphabet but only one word if it is not the same alphabet, in that last case, that will block. This are our rules for certifying</p>
+<p id=97ff class="phone s02"><cite>GeorgeK:</cite> i think it also depend on language groups, maybe in cases it would trgigger different feedbacks.</p>
+<p id=69dd class="phone s07"><cite>mgarrish:</cite> we cannot modify wcag.</p>
+<p id=c558 class="phone s06"><cite>Bill_Kasdorf6:</cite> there's gonna be judgement involved, but many time those tagging have to be done.</p>
+<p id=1382 class="phone s10"><cite>gautierchomel:</cite> the langugae group things is real, some africans french speaking countries are happy with french from france voices, while others cannot use it because they feel it's too much ununderstandable for them.</p>
+<p id=9e76 class="phone s04"><cite>gpellegrino:</cite> we cannot change wcag but having some precision is what we ask. We did that for EPUB accessibility. I agree to have the bar high but the reality is far.</p>
+<p id=7a56 class="phone s10"><cite>gautierchomel:</cite> wcag does not define parts, we may ask them why.</p>
+<p id=9d8c class="phone s10"><cite>gautierchomel:</cite> to me that's because it's an editorial responsability.</p>
+<p id=4102 class="phone s07"><cite>mgarrish:</cite> we certainly have to ask them before publishing anything.</p>
+<p id=9881 class=irc><cite>&lt;AvneeshSingh&gt;</cite> Links to all questions: <a href="https://github.com/daisy/transitiontoepub/issues/97">daisy/<wbr>transitiontoepub#97</a></p>
+<p id=446e class=irc><cite>&lt;AvneeshSingh&gt;</cite> <a href="https://github.com/daisy/transitiontoepub/issues/98">daisy/<wbr>transitiontoepub#98</a></p>
+<p id=a7db class=irc><cite>&lt;AvneeshSingh&gt;</cite> <a href="https://github.com/daisy/transitiontoepub/issues/99">daisy/<wbr>transitiontoepub#99</a></p>
+<p id=c27d class=irc><cite>&lt;AvneeshSingh&gt;</cite> <a href="https://github.com/daisy/transitiontoepub/issues/100">daisy/<wbr>transitiontoepub#100</a></p>
+<p id=7fd6 class=irc><cite>&lt;AvneeshSingh&gt;</cite> <a href="https://github.com/daisy/transitiontoepub/issues/101">daisy/<wbr>transitiontoepub#101</a></p>
+<p id=6ee9 class="phone s12"><cite>vincentml:</cite> I feel we should tag anything and let reading systems, TTS engine empower users.</p>
+<p id=4651 class="phone s03"><cite>AvneeshSingh:</cite> I added all links to discussions, so they will be in the minutes, I encourage everyone to pass the links to colleagues so we can have the wider possible feedback.</p>
+<p id=3768 class=irc><cite>&lt;Bill_Kasdorf6&gt;</cite> +1 to Avneesh</p>
+<p id=fd12 class=irc><cite>&lt;jsaiya&gt;</cite> +1 to gautierchomel</p>
+<p id=fecb class="phone s03"><cite>AvneeshSingh:</cite> also I agree we could have other plenaries on the topic but focusing on specific issues or targetting specific audiences.</p>
+</section>
+</main>
+
+
+<address>Minutes manually created (not a transcript), formatted by <a
+href="https://w3c.github.io/scribe2/scribedoc.html"
+>scribe.perl</a> version 248 (Mon Oct 27 20:04:16 2025 UTC).</address>
+
+<div class=diagnostics>
+<h2>Diagnostics</h2>
+<p class=warning>Succeeded: s/bloking/blocking/</p>
+<p class=warning>Succeeded: s/langugae/language/</p>
+<p class=warning>Succeeded: s/be to straight/be too strict/</p>
+<p class=warning>Succeeded: s/certifcing/certifying/</p>
+<p class=warning>Succeeded: s/smae/same/</p>
+<p class=warning>Maybe present: gautierchomel, PaoloCasrini, PaoloPancaldi, vincentml, wolfgang</p>
+<p class=warning>All speakers: AvneeshSingh, Bill_Kasdorf6, DaleRogers, gautierchomel, GeorgeK, gpellegrino, mgarrish, PaoloCasrini, PaoloPancaldi, sueneu, vincentml, wolfgang</p>
+<p class=warning>Active on IRC: AvneeshSingh, Bill_Kasdorf6, DaleRogers, gautierchomel, GeorgeK, gpellegrino, jgriggs_prh, jsaiya, mgarrish, sueneu, vincentml, wolfgang, wolfgang6</p>
+</div>
+</body>
+</html>
