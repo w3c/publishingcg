@@ -5,6 +5,7 @@ title: agenda
 
 # Agenda of the Plenary Sessions
 
+* 2026, July 9th, **language tagging**: We will review concrete examples (e.g. TTS mispronunciations, frequent language shifts, “dead” languages, and typographic side effects) and clarify what can be solved by better markup versus what requires changes in reading systems or assistive technologies. Based on: https://github.com/daisy/transitiontoepub/issues/92.
 * 2026, June 25th, **AI Preference Signals** This session will examine the fine-grained acceptance of content usage through IETF signals once a content provider has reserved their Text and Data Mining (TDM) rights via TDMRep.
 Our discussion will focus on the proposed vocabulary:
     * The current [IETF draft](https://datatracker.ietf.org/doc/draft-ietf-aipref-vocab/) defines the terms AI Model Training and Search.
