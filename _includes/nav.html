@@ -1,52 +1,18 @@
 <nav aria-label="Site navigation">
-    <div class="related__inner">
-        <h2 class="txt-jupiter">Getting involved</h2>
+    {% for section in site.data.navigation.sections %}
+    <div class="related__inner{% unless forloop.first %} family-grouping{% endunless %}">
+        <h2 class="txt-jupiter">{{ section.title }}</h2>
         <ul class="clean-list" role="list">
-            <li><a href="{{ site.baseurl }}/">Home</a></li>
-            <li><a href="{{ site.baseurl }}/Meetings/">Meetings</a></li>
-            <li><a href="{{ site.baseurl }}/Meetings/Agenda/">Agendas</a></li>
-            <li><a href="{{ site.baseurl }}/Meetings/Minutes/">Minutes</a></li>
-            <li><a href="{{ site.baseurl }}/Meetings/AIsessions/">AI in RS sessions (2025)</a></li>
+            {% for link in section.links %}
+            <li>
+                {% if link.external %}
+                <a rel="external" href="{{ link.href }}">{{ link.title }}</a>
+                {% else %}
+                <a href="{{ site.baseurl }}{{ link.href }}">{{ link.title }}</a>
+                {% endif %}
+            </li>
+            {% endfor %}
         </ul>
     </div>
-
-    <div class="related__inner family-grouping">
-        <h2 class="txt-jupiter">Incubation</h2>
-        <ul class="clean-list" role="list">
-            <li><a href="{{ site.baseurl }}/Incubation/">Incubation</a></li>
-            <li><a href="{{ site.baseurl }}/Incubation/parallel-content">Parallel Content</a></li>
-            <li><a href="{{ site.baseurl }}/Incubation/parallel-content-usecases">Parallel Content Use Cases</a></li>
-            <li><a href="{{ site.baseurl }}/Incubation/multiple-rendition-simplification-explainer">Simplifying Multiple-Rendition</a></li>
-        </ul>
-    </div>
-
-    <div class="related__inner family-grouping">
-        <h2 class="txt-jupiter">Active Task forces</h2>
-        <ul class="clean-list" role="list">
-            <li><a href="{{ site.baseurl }}/TaskForces/a11y">Accessibility</a></li>
-            <li><a href="{{ site.baseurl }}/TaskForces/fxl-a11y">Fixed-Layout Accessibility</a></li>
-            <li><a href="{{ site.baseurl }}/TaskForces/documentation">Documentation</a></li>
-            <li><a href="{{ site.baseurl }}/TaskForces/anti-counterfeit">Anti Counterfeit</a></li>
-        </ul>
-    </div>
-
-    <div class="related__inner family-grouping">
-        <h2 class="txt-jupiter">Past Task forces</h2>
-        <ul class="clean-list" role="list">
-            <li><a href="{{ site.baseurl }}/TaskForces/education">Education</a></li>
-            <li><a href="{{ site.baseurl }}/TaskForces/vertical-writing-switching">Vertical writing switching</a></li>
-        </ul>
-    </div>
-
-    <div class="related__inner family-grouping">
-        <h2 class="txt-jupiter">General Links</h2>
-        <ul class="clean-list" role="list">
-            <li><a rel="external" href="https://www.w3.org/Consortium/join">Joining W3C</a></li>
-            <li><a rel="external" href="https://www.w3.org/Consortium/activities">W3C Activities</a></li>
-            <li><a rel="external" href="http://www.w3.org/Guide/">W3C Guidebook</a></li>
-            <li><a rel="external" href="https://www.w3.org/TR/patent-policy/">W3C Patent Policy</a></li>
-            <li><a rel="external" href="https://www.w3.org/Consortium/Process/">W3C Process Document</a></li>
-            <li><a rel="external" href="https://www.w3.org/Consortium/cepc/">Code of Conduct</a></li>
-        </ul>
-    </div>
+    {% endfor %}
 </nav>
