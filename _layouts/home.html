@@ -1,48 +1,168 @@
-<!DOCTYPE HTML>
-<html lang="en">
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}" class="no-js">
 <head>
-  <meta charset="UTF-8">
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="home" href="https://www.w3.org/"/>
+    <link rel="icon" type="image/png" href="https://www.w3.org/assets/logos/w3c-2025/favicons/favicon-32.png"/>
+    <link rel="apple-touch-icon" type="image/png" href="https://www.w3.org/assets/logos/w3c-2025/favicons/favicon-180.png"/>
+    <link rel="stylesheet" href="https://www.w3.org/assets/website-2021/styles/core.css?ver=1.5" media="screen"/>
+    <link rel="stylesheet" id="advanced-stylesheet" href="https://www.w3.org/assets/website-2021/styles/advanced.css?ver=1.5" media="only print, only all and (pointer: fine), only all and (pointer: coarse), only all and (pointer: none), only all and (min--moz-device-pixel-ratio:0) and (display-mode:browser), (min--moz-device-pixel-ratio:0) and (display-mode:fullscreen)"/>
+    <link rel="stylesheet" href="https://www.w3.org/assets/website-2021/styles/print.css" media="print"/>
+    <script src="https://www.w3.org/assets/website-2021/js/libraries/fontfaceobserver.js"></script>
+    <script>
+        var myFont = new FontFaceObserver('Noto Sans');
+        Promise.all([myFont.load()]).then(function () {
+            document.documentElement.className += ' fonts-loaded';
+        });
+        (function () {
+            var linkEl = document.getElementById('advanced-stylesheet');
+            if (window.matchMedia && window.matchMedia(linkEl.media).matches) {
+                var script = document.createElement('script');
+                script.src = 'https://www.w3.org/assets/website-2021/js/main.js?ver=1.4';
+                script.defer = true;
+                document.querySelector('head').appendChild(script);
+                (function (H) {
+                    H.className = H.className.replace(/\bno-js\b/, 'js');
+                })(document.documentElement);
+            }
+        })();
+    </script>
     <title>W3C {{ site.cgname_uc }} Community Group</title>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width">
-    <meta name="application-name" content="{{ site.cgname_uc }} Community Group" />
-    <meta name="screen-orientation" content="portrait" />
-    <meta name="full-screen" content="yes" />
-    <meta name="description" content="{{ site.mission }}" />
+    <meta name="description" content="{{ page.description | default: site.mission }}"/>
+    <style>
+        :root {
+            --pcg-blue: #005a9c;
+            --pcg-blue-deep: #003a63;
+            --pcg-cyan: #1f9bcf;
+            --pcg-surface: #f3f8fc;
+            --pcg-border: #c6d9e7;
+            --pcg-text: #102a43;
+        }
+
+        body.default {
+            background: linear-gradient(180deg, #eaf3fa 0%, #ffffff 22rem);
+            color: var(--pcg-text);
+        }
+
+        .pcg-brand {
+            background: var(--pcg-blue-deep);
+            border-bottom: 3px solid var(--pcg-cyan);
+            padding: 0.5rem 0;
+        }
+
+        .pcg-brand__link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .pcg-brand__logo {
+            height: 34px;
+            width: auto;
+            background: #fff;
+            border-radius: 4px;
+            padding: 0.15rem;
+        }
+
+        #global-nav {
+            background: var(--pcg-blue);
+        }
+
+        #global-nav .nav-link {
+            color: #fff;
+        }
+
+        #global-nav .nav-link:hover,
+        #global-nav .nav-link:focus {
+            color: #fff;
+            text-decoration-color: #fff;
+        }
+
+        .pcg-two-col {
+            display: flex !important;
+            flex-wrap: nowrap;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .pcg-two-col > article {
+            flex: 1 1 auto;
+            min-width: 0;
+            float: none !important;
+            width: auto !important;
+            overflow-wrap: anywhere;
+        }
+
+        .pcg-two-col > .pcg-left-nav {
+            flex: 0 0 clamp(16rem, 28vw, 22rem);
+            width: auto !important;
+            float: none !important;
+        }
+
+        .pcg-left-nav .related__inner + .related__inner {
+            margin-top: 1.25rem;
+        }
+
+        .pcg-left-nav .related__inner {
+            background: var(--pcg-surface);
+            border: 1px solid var(--pcg-border);
+            border-radius: 8px;
+            padding: 0.9rem;
+        }
+
+        .pcg-left-nav .txt-jupiter {
+            color: var(--pcg-blue-deep);
+        }
+
+        article .component--text {
+            background: #fff;
+            border: 1px solid var(--pcg-border);
+            border-radius: 10px;
+            padding: 1rem 1.25rem;
+            box-shadow: 0 8px 24px rgba(16, 42, 67, 0.08);
+        }
+
+        @media (max-width: 900px) {
+            .pcg-two-col {
+                display: block !important;
+            }
+
+            .pcg-two-col > article,
+            .pcg-two-col > .pcg-left-nav {
+                width: 100% !important;
+            }
+        }
+    </style>
     {% if page.json-ld %}
     <script type="application/ld+json">{{ page.json-ld }}</script>
     {% endif %}
-
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <script src="{{ site.baseurl }}/assets/js/hyphenate.min.js"></script>
-    <script async type="text/javascript" src="{{ site.baseurl }}/assets/js/newsfeed.js"> </script>
-    <style>
-        .todo {
-            background: yellow;
-            font-style: italic;
-        }
-        ul.inline {
-            margin: 0;
-            display: inline-block;
-        }
-        ul.inline li {
-            float: left;
-            margin-right: 2em;
-        }
-    </style>
 </head>
-<body>
-    {% include header.html %}
-    <main>
-        {% include nav.html %}
-        <section>{{ content }}</section>
-        {% include aside.html %}
-    </main>
-    {% include footer.html %}
+<body class="default">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="grid-wrap">
+        <div class="wrap">
+            {% include header.html %}
+            <main id="main">
+                <div class="content pcg-two-col">
+                    <section class="pcg-left-nav" aria-label="Navigation and resources">
+                        {% include nav.html %}
+                        {% include aside.html %}
+                    </section>
+                    <article>
+                        <div class="component component--text">
+                            {{ content }}
+                        </div>
+                    </article>
+                </div>
+            </main>
+        </div>
+        {% include footer.html %}
+    </div>
+    <script src="{{ site.baseurl }}/assets/js/hyphenate.min.js"></script>
+    <script async type="text/javascript" src="{{ site.baseurl }}/assets/js/newsfeed.js"></script>
 </body>
 </html>
