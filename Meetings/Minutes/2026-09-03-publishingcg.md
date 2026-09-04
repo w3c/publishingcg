@@ -35,9 +35,8 @@ Brady Duga, Charles LaPierre, Gregorio Pellegrino, Susan Neuhaus, Vladimir Khari
 Github repo triggers Github page. I would like to renew the Github page. What do we really want to display on this page [Publishing-CG page on Github](https://github.com/w3c-cg/publishingcg/)
 Minutes are in a wiki for A11Y We have one page per meeting for minutes Please note that it is now under w3c-cg
 **Brady:** It doesn’t hurt to have these Git pages we don’t need to abandon that persons looking for a few meetings presumably won’t use it
-**Gautier:** good way to inform what is happening in this group we have a fragmentation of information between different groups, WG CG
-**Susan:** trying to make a list of the available documents put it in a Google sheet we had a Documentation TF but it is no longer active
-[List of documents from the CG, WG, and task forces](https://docs.google.com/spreadsheets/d/18AQLoiyn3qzMCWC8bLFnoOlzITjdRalIPBO5PuVXGIc/edit?usp=sharing) 
+**Gautier:** good way to inform what is happening in this group we have a fragmentation of information between different groups, WG CG. we had a Documentation TF but it is no longer active. For now the source of truth is [Entry point for the W3C EPUB Recommendation](https://w3c.github.io/epub/) 
+**Susan:** trying to make a list of the available documents put it in a Google sheet. 
 **Charles:** Would be nice to have a one-stop shop documentation, Github repos, etc. have an overview of the specs also of best practices (images, fixed layouts) 
 **Gautier:** there are different variations knowledge base from DAISY, MDN Webdocs
 **Charles:** automation by AI and Github cron job to keep documentation up to date
@@ -73,7 +72,14 @@ There is a [W3C Slack channel](https://w3ccommunity.slack.com/join/shared_invite
 * Susan: assist with that concept/POC work.
 * Dale: reach out to the independent authors alliance, raise awareness of CG activities, and act as liaison / invite participation.
 
+## Resume
+
+The Publishing Community Group has to ease participation and collaboration among the industry and that mean simplifying the path for people who are not used to technical process like the use of IRC and Zakim for note taking and queue management. Members agreed to use easier, familiar tools for meetings and note-taking, while keeping human oversight for quality and inclusion. 
+The group also identified a bigger need: creating a single, clear place where publishing standards work, best practices, and related resources can be found across W3C publishing groups. Volunteers committed to move this forward through a GitHub issue, cross-group outreach, and early concept work, with potential discussion at TPAC. 
+The overall direction is practical and community-focused: lower participation barriers, improve transparency, and bring in more voices from publishers and allied communities.
+
 ## Links and ressources
-* [W3C Slack channel](https://w3ccommunity.slack.com/join/shared_invite/zt-43z2v1knl-V2OjtO4vDirH3DABOsDg3w#/shared-invite/email)
-* [List of documents from the CG, WG, and task forces](https://docs.google.com/spreadsheets/d/18AQLoiyn3qzMCWC8bLFnoOlzITjdRalIPBO5PuVXGIc/edit?usp=sharing) 
+
+* [Entry point for the W3C EPUB Recommendation](https://w3c.github.io/epub/) 
 * [Publishing-CG page on Github](https://github.com/w3c-cg/publishingcg/)
+* [W3C Slack channel](https://w3ccommunity.slack.com/join/shared_invite/zt-43z2v1knl-V2OjtO4vDirH3DABOsDg3w#/shared-invite/email)
