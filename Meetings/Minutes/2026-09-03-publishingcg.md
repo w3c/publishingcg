@@ -60,7 +60,18 @@ Minutes are in a wiki for A11Y We have one page per meeting for minutes Please n
 **Gautier:** quite a productive meeting are there topics you would like us to address next month Comics TF startup any further issue? 
 There is a [W3C Slack channel](https://w3ccommunity.slack.com/join/shared_invite/zt-43z2v1knl-V2OjtO4vDirH3DABOsDg3w#/shared-invite/email) good place for working
 
+## Decisions taken
+* The publishing CG will use Zoom hand-raise for queue management and Google Docs for note-taking.
+* The publishing CG will discuss the documentation consolidation topic at TPAC (possibly as a breakout). If possible, the group will consider a TPAC-ready POC scope/timeline, even if not fully complete by TPAC.
+
+
 ## Action items
+* Gautier: open a GitHub issue after the meeting to track the “one-stop shop” documentation/process work.
+* Susan: bring the meeting outcomes to WG chairs and report feedback back to the group.
+* Jim: watch for Github issues and contribute (potential PR).
+* Charles: help develop a concept/POC for consolidated documentation.
+* Susan: assist with that concept/POC work.
+* Dale: reach out to the independent authors alliance, raise awareness of CG activities, and act as liaison / invite participation.
 
 ## Links and ressources
 * [W3C Slack channel](https://w3ccommunity.slack.com/join/shared_invite/zt-43z2v1knl-V2OjtO4vDirH3DABOsDg3w#/shared-invite/email)
