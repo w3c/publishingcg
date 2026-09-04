@@ -5,6 +5,7 @@ title: minutes
 
 # Meeting Minutes
 
+* [2026, September 3th, tools for the publishing community group](2026-09-03-publishingcg.html)
 * [2026, July 9th, language tagging](2026-07-09-publishingcg.html)
 * [2026 may 28th Incubation and standardisation](2026-05-28-publishingcg.html)
 * [2026 april 23th Protect and Defend Your Content in the Emerging AI Era](2026-04-23-publishingcg.html)
