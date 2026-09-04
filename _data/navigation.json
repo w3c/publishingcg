@@ -5,9 +5,6 @@
       "links": [
         { "title": "Home", "href": "/" },
         { "title": "Meetings", "href": "/Meetings/" },
-        { "title": "Agendas", "href": "/Meetings/Agenda/" },
-        { "title": "Minutes", "href": "/Meetings/Minutes/" },
-        { "title": "AI in RS sessions (2025)", "href": "/Meetings/AIsessions/" }
       ]
     },
     {
