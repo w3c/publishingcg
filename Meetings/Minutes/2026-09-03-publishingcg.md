@@ -65,6 +65,7 @@ There is a [W3C Slack channel](https://w3ccommunity.slack.com/join/shared_invite
 
 
 ## Action items
+* Gautier: simplify the github pages layout and content to make it easier to use.
 * Gautier: open a GitHub issue after the meeting to track the “one-stop shop” documentation/process work.
 * Susan: bring the meeting outcomes to WG chairs and report feedback back to the group.
 * Jim: watch for Github issues and contribute (potential PR).
