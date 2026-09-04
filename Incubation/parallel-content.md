@@ -31,7 +31,7 @@ For clarity, we distinguish two categories, only the first one is addressed here
 
 ## Discussion update — CG plenary 26 February 2026
 
-This document was reviewed during the Publishing Community Group plenary on 26 February 2026. The minutes are available at: [Publishing community group plenary - parallel content in EPUB (26 February 2026)](../Meetings/Minutes/2026-02-26-publishingcg.html).
+This document was reviewed during the Publishing Community Group plenary on 26 February 2026. The minutes are available at: [Publishing community group plenary - parallel content in EPUB (26 February 2026)](../Contributing/Minutes/2026-02-26-publishingcg.html).
 
 The discussion confirmed broad interest across publishing sectors (education, newspapers, comics, accessibility, bilingual publishing) and refined the framing of the problem.
 
@@ -357,7 +357,7 @@ Key characteristics:
 ## References and links
 
 - Publishing CG plenary minutes (26 February 2026)  
-  ../Meetings/Minutes/2026-02-26-publishingcg.html
+  ../Contributing/Minutes/2026-02-26-publishingcg.html
 
 - EPUB WG discussion: “Ways to publish and consume parallel contents” (Discussion #2829)  
   https://github.com/w3c/epub-specs/discussions/2829 

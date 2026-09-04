@@ -154,6 +154,23 @@
             color: var(--pcg-blue-deep);
         }
 
+        .pcg-left-nav .pcg-nav-foldable > summary {
+            cursor: pointer;
+        }
+
+        .pcg-left-nav .pcg-nav-foldable > summary > a {
+            display: inline;
+        }
+
+        .pcg-left-nav .pcg-subnav {
+            margin-top: 0.45rem;
+            margin-left: 1rem;
+        }
+
+        .pcg-left-nav .pcg-subnav li + li {
+            margin-top: 0.3rem;
+        }
+
         article .component--text {
             background: #fff;
             border: 1px solid var(--pcg-border);
@@ -191,7 +208,6 @@
                 <div class="content pcg-two-col">
                     <section class="pcg-left-nav" aria-label="Navigation and resources">
                         {% include nav.html %}
-                        {% include aside.html %}
                     </section>
                     <article id="content">
                         <div class="component component--text">

@@ -10,7 +10,6 @@ Minutes are taken using a shared google doc for witch the chairs have editing ri
 The minutes of the meetings, including the minutes of the WG Task Forces, are stored on the <code>minutes</code> folder on this repository under the name <code>YYYY-MM-DD[-TF].html</code> (where the optional <code>[-TF]</code> stands for <code>-a11y</code>, <code>-ann</code>, <code>-dc</code>, or <code>-fxl</code> for the accessibility, annotation, digital comics, and fixed layout task forces, respectively). 
 An index of all agendas and minutes is available below.
 
-
 ## Meeting Agenda and Minutes
 
 * [2026, July 9th, language tagging](Minutes/2026-07-09-publishingcg.html) We will review concrete examples (e.g. TTS mispronunciations, frequent language shifts, “dead” languages, and typographic side effects) and clarify what can be solved by better markup versus what requires changes in reading systems or assistive technologies. Based on: https://github.com/daisy/transitiontoepub/issues/92.

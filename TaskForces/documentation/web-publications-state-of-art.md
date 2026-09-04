@@ -238,4 +238,4 @@ The manifest provides a cleaner way to express these relationships than HTML alo
 - [Publication Manifest Recommendation](https://www.w3.org/TR/pub-manifest/)
 - [Readium Project](https://readium.org)
 - [Readium Playground](https://playground.readium.org)
-- [W3C Publishing Community Group Plenary Minutes, 29 January 2026 what is the W3C Web Publications format suitable for?](../../Meetings/Minutes/2026-01-29-publishingcg.html)
+- [W3C Publishing Community Group Plenary Minutes, 29 January 2026 what is the W3C Web Publications format suitable for?](../../Contributing/Minutes/2026-01-29-publishingcg.html)

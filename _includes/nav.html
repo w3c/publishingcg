@@ -1,11 +1,48 @@
 <nav aria-label="Site navigation">
+    {% if site.data.navigation.topLinks %}
+    <div class="related__inner">
+        <ul class="clean-list" role="list">
+            {% for link in site.data.navigation.topLinks %}
+            <li>
+                {% if link.external %}
+                <a rel="external" href="{{ link.href }}">{{ link.title }}</a>
+                {% else %}
+                <a href="{{ site.baseurl }}{{ link.href }}">{{ link.title }}</a>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
     {% for section in site.data.navigation.sections %}
     <div class="related__inner{% unless forloop.first %} family-grouping{% endunless %}">
         <h2 class="txt-jupiter">{{ section.title }}</h2>
         <ul class="clean-list" role="list">
             {% for link in section.links %}
             <li>
-                {% if link.external %}
+                {% if link.children %}
+                <details class="pcg-nav-foldable">
+                    <summary>
+                        {% if link.external %}
+                        <a rel="external" href="{{ link.href }}">{{ link.title }}</a>
+                        {% else %}
+                        <a href="{{ site.baseurl }}{{ link.href }}">{{ link.title }}</a>
+                        {% endif %}
+                    </summary>
+                    <ul class="clean-list pcg-subnav" role="list">
+                        {% for child in link.children %}
+                        <li>
+                            {% if child.external %}
+                            <a rel="external" href="{{ child.href }}">{{ child.title }}</a>
+                            {% else %}
+                            <a href="{{ site.baseurl }}{{ child.href }}">{{ child.title }}</a>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </details>
+                {% elsif link.external %}
                 <a rel="external" href="{{ link.href }}">{{ link.title }}</a>
                 {% else %}
                 <a href="{{ site.baseurl }}{{ link.href }}">{{ link.title }}</a>

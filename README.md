@@ -19,7 +19,7 @@ See [Ways to Contribute](#ways-to-contribute) if you'd like to participate but a
 
 ## Meetings
 
-[Monthly CG Meeting Minutes and Agenda](Meetings/index.md)
+[Monthly CG Meeting Minutes and Agenda](Contributing/index.md)
 
 ## Active Task Forces
 

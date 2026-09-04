@@ -15,7 +15,7 @@ It complements:
 
 - [Parallel content survey](./parallel-content.md)
 - [Explainer — Simplifying EPUB Multiple-Rendition for representation mapping](./multiple-rendition-simplification-explainer.md)
-- [Publishing CG plenary minutes (26 February 2026)](../Meetings/Minutes/2026-02-26-publishingcg.html)
+- [Publishing CG plenary minutes (26 February 2026)](../Contributing/Minutes/2026-02-26-publishingcg.html)
 
 ## Scope
 

@@ -1,23 +1,33 @@
 {
+  "topLinks": [
+    { "title": "Home", "href": "/" }
+  ],
   "sections": [
     {
       "title": "Getting involved",
       "links": [
-        { "title": "Home", "href": "/" },
-        { "title": "Meetings", "href": "/Meetings/" },
+        { "title": "Meetings", "href": "/Contributing/" },
+        { "title": "Mailing Lists", "href": "/Contributing/mailinglists" },
+        { "title": "Contributing", "href": "/Contributing/contributing" }
+
       ]
     },
     {
       "title": "Incubation",
       "links": [
         { "title": "Incubation", "href": "/Incubation/" },
-        { "title": "Parallel Content", "href": "/Incubation/parallel-content" },
-        { "title": "Parallel Content Use Cases", "href": "/Incubation/parallel-content-usecases" },
-        { "title": "Simplifying Multiple-Rendition", "href": "/Incubation/multiple-rendition-simplification-explainer" }
+        {
+          "title": "Parallel Content",
+          "href": "/Incubation/parallel-content",
+          "children": [
+            { "title": "Use Cases", "href": "/Incubation/parallel-content-usecases" },
+            { "title": "Simplifying MR", "href": "/Incubation/multiple-rendition-simplification-explainer" }
+          ]
+        }
       ]
     },
     {
-      "title": "Active Task forces",
+      "title": "Task forces",
       "links": [
         { "title": "Accessibility", "href": "/TaskForces/a11y" },
         { "title": "Fixed-Layout Accessibility", "href": "/TaskForces/fxl-a11y" },
