@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Incubation
+title: Incubation process
 ---
 
 The publishing community group is the place for innovation. We store here intermediate documents that supports the discussions and help keep information together all along the incubation process.

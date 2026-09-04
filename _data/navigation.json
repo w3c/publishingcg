@@ -15,13 +15,13 @@
     {
       "title": "Incubation",
       "links": [
-        { "title": "Incubation", "href": "/Incubation/" },
+        { "title": "Incubation process", "href": "/Incubation/" },
         {
           "title": "Parallel Content",
-          "href": "/Incubation/parallel-content",
+          "href": "/Incubation/representation-mapping/parallel-content",
           "children": [
-            { "title": "Use Cases", "href": "/Incubation/parallel-content-usecases" },
-            { "title": "Simplifying MR", "href": "/Incubation/multiple-rendition-simplification-explainer" }
+            { "title": "Use Cases", "href": "/Incubation/representation-mapping/parallel-content-usecases" },
+            { "title": "Simplifying MR", "href": "/Incubation/representation-mapping/multiple-rendition-simplification-explainer" }
           ]
         }
       ]

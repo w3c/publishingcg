@@ -58,7 +58,7 @@ Meeting participants reported that:
 - Multiple-Rendition is valuable conceptually but perceived as difficult to deploy in practice,
 - implementation-focused simplification is now more important than purely conceptual incubation.
 
-[Minutes](../Contributing/Minutes/2026-02-26-publishingcg.html)
+[Minutes](../../Contributing/Minutes/2026-02-26-publishingcg.html)
 
 ## Motivating use cases
 
@@ -212,7 +212,7 @@ Current signal from discussions:
 
 ## References and acknowledgements
 
-- Publishing CG minutes (26 February 2026): ../Contributing/Minutes/2026-02-26-publishingcg.html
+- Publishing CG minutes (26 February 2026): ../../Contributing/Minutes/2026-02-26-publishingcg.html
 - Parallel content survey draft: ./parallel-content.md
 - EPUB WG discussion #2829: https://github.com/w3c/epub-specs/discussions/2829
 - EPUB Multiple-Rendition Publications 1.1: https://www.w3.org/TR/epub-multi-rend-11/
