@@ -75,7 +75,7 @@ There is a [W3C Slack channel](https://w3ccommunity.slack.com/join/shared_invite
 
 ## Resume
 
-The Publishing Community Group has to ease participation and collaboration among the industry and that mean simplifying the path for people who are not used to technical process like the use of IRC and Zakim for note taking and queue management. Members agreed to use easier, familiar tools for meetings and note-taking, while keeping human oversight for quality and inclusion. 
+The Publishing Community Group has to ease participation and collaboration among the industry and that mean simplifying the path for people who are not used to technical process like the use of IRC and Zakim for note taking and queue management. Members agreed to use more publishing community habitual tools for meetings and note-taking, while keeping human oversight for quality and inclusion. 
 The group also identified a bigger need: creating a single, clear place where publishing standards work, best practices, and related resources can be found across W3C publishing groups. Volunteers committed to move this forward through a GitHub issue, cross-group outreach, and early concept work, with potential discussion at TPAC. 
 The overall direction is practical and community-focused: lower participation barriers, improve transparency, and bring in more voices from publishers and allied communities.
 
